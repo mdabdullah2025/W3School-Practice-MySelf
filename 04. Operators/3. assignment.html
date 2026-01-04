@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3 assignment</title>
+  </head>
+  <body>
+    <h2>4 Jan 2026 6:57:30 PM</h2>
+    <h3>1st JavaScript Assignment Operators</h3>
+    <h3>Simple Assignment</h3>
+    <h3>Simple The = Operator</h3>
+    <p id="assi"></p>
+
+    <!-- <h3>The + Operator</h3>
+    <p>The value of ass2 is:</p>
+    <p id="assi1"></p>
+
+    <h3>Addition The += Operator</h3>
+    <p>The value of ass3 is:</p>
+    <p id="assi2"></p>
+
+    <h3>Subtraction The -= Operator</h3>
+    <p id="assi3"></p>
+
+    <h3>Multiplication The *= Operator</h3>
+    <p id="assi4"></p>
+
+    <h3>Exponentiation The **= Operator</h3>
+    <p id="assi5"></p>
+
+    <h3>Division The /= Operator</h3>
+    <p id="assi6"></p>
+
+    <h3> Remainder The %= Operator</h3>
+    <p id="assi7"></p>
+
+    <script>
+      let ass = 10;
+      document.getElementById("assi").innerHTML = "Value of ass is: " + ass;
+
+      let ass1 = 50;
+      let ass2 = 10 + ass1;
+      document.getElementById("assi1").innerHTML = ass2;
+
+      let ass3 = 10;
+      ass3 += 5;
+      document.getElementById("assi2").innerHTML = ass3;
+
+      let ass4 = 10;
+      ass4 -= 5;
+      document.getElementById("assi3").innerHTML = "Value of ass4 is: " + ass4;
+
+      let ass5 = 10;
+      ass5 *= 5;
+      document.getElementById("assi4").innerHTML = "Value of ass5 is: " + ass5;
+
+      let ass6 = 10;
+      ass6 **= 5;
+      document.getElementById("assi5").innerHTML = "Value of ass6 is: " + ass6;
+
+      let ass7 = 10;
+      ass7 /= 5;
+      document.getElementById("assi6").innerHTML = "Value of ass7 is: " + ass7;
+
+      let ass8 = 10;
+      ass8 %= 5;
+      document.getElementById("assi7").innerHTML = "Value of ass8 is: " + ass8;
+    </script> -->
+
+    <h3>2nd String Assignment</h3>
+    <p id="stri"></p>
+    <p>Addition Assignment +=</p>
+    <p id="stri1"></p>
+    <h3>Logical AND Assignment The &&= Operator</h3>
+    <p>If the first value is true, the second value is assigned.</p>
+    <!-- <p id="stri2"></p>
+    <p id="stri3"></p>
+    <p id="stri4"></p>
+    <p id="stri5"></p>
+    <p id="stri6"></p>
+    <p id="stri7"></p>
+    <script>
+        let str = "Hello";
+        document.getElementById("stri").innerHTML = str;
+
+        let str1 = "Hello";
+        str1 += " World";
+        document.getElementById("stri1").innerHTML = str1;
+
+        let str2 = true;
+        let str3 = str2 &&= 10;
+        document.getElementById("stri2").innerHTML = "Value of str3 is: " + str3;
+
+        let str4 = false;
+        let str5 = str4 &&= 5;
+        document.getElementById("stri3").innerHTML = "Value of str5 is: " + str5;
+
+        let str6 = 1;
+        let str7 = str6 &&= 10;
+        document.getElementById("stri4").innerHTML = "Value of str7 is: " + str7;
+
+        let str8 = 0;
+        let str9 = str8 &&= 10;
+        document.getElementById("stri5").innerHTML = "Value of str9 is: " + str9;
+
+        let str10 = undefined;
+        let str11 = str10 &&= 10;
+        document.getElementById("stri6").innerHTML  = "Value of str11 is: " + str11;
+
+        let str12 = null;
+        let str13 = str12 &&= 10;
+        document.getElementById("stri7").innerHTML = "Value of str13 is: " + str13;
+    </script> -->
+
+    <h3>3rd The Logical OR Assignment ||= Operator</h3>
+
+    <p>If the first value is false, the second value is assigned:</p>
+    <p id="logi"></p>
+    <p id="logi1"></p>
+    <p id="logi2"></p>
+    <p id="logi3"></p>
+
+    <script>
+      let log = false;
+      let log1 = (log ||= 10);
+      document.getElementById("logi").innerHTML = "Value of log1 is: " + log1;
+
+      let log2 = true;
+      let log3 = (log2 ||= 10);
+      document.getElementById("logi1").innerHTML = "Value of log3 is: " + log3;
+
+      let log4 = null;
+      let log5 = (log4 ||= 10);
+      document.getElementById("logi2").innerHTML = "Value of log5: " + log5;
+
+      let log6 = undefined;
+      let log7 = (log6 ||= log6);
+      document.getElementById("logi3").innerHTML = "Value of log7 is: " + log7;
+    </script>
+
+    <h3>4th The Nullish ??= Operator</h3>
+    <p>
+      If the first value is undefined or null, the second value is assigned.
+    </p>
+    <p id="null"></p>
+    <p id="null1"></p>
+    <p id="null2"></p>
+    <p id="null3"></p>
+    <p id="null4"></p>
+    <p id="null5"></p>
+
+    <script>
+      let nul;
+      nul ??= 10;
+      document.getElementById("null").innerHTML = "x is: " + nul;
+
+      let nul1 = 0;
+      nul1 ??= 10;
+      document.getElementById("null1").innerHTML = "nul1 is: " + nul1;
+
+      let nul2 = null;
+      nul2 ?? 10;
+      document.getElementById("null2").innerHTML = "nul2 is: " + nul2;
+
+      let nul3 = undefined;
+      nul3 ??= 10;
+      document.getElementById("null3").innerHTML = "nul3 is: " + nul3;
+
+      let nul4 = 10;
+      let nul5 = 5;
+      nul4 ??= 10;
+      document.getElementById("null4").innerHTML = "nul4 is: " + nul4;
+
+      let nul6 = (nul4 ??= nul5);
+      document.getElementById("null5").innerHTML = "nul6 is: " + nul6;
+    </script>
+
+    <h3>5th Spread (...) Operator</h3>
+    <p id="spre"></p>
+
+    <script>
+      let text = "8912345754653532541";
+      let min = Math.min(...text);
+      let max = Math.max(...text);
+      document.getElementById("spre").innerHTML =
+        "Minimum is: " + min + "<br>Maximum is: " + max;
+    </script>
+  </body>
+</html>

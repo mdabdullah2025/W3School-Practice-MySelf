@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-    <title>update1</title>  
-    <style>
-        /* CSS অংশ */
-        body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-            color: #1a1a1a;
-            padding: 20px;
-        }     
-        /* #codeColor এবং তার ভেতরের সমস্ত ট্যাগ যেন প্যারেন্টের স্টাইল গ্রহণ করে। */
-        #codeColor, 
+  <title>update1</title>
+  <style>
+    /* CSS অংশ */
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #1a1a1a;
+      padding: 20px;
+    }
+    /* #codeColor এবং তার ভেতরের সমস্ত ট্যাগ যেন প্যারেন্টের স্টাইল গ্রহণ করে। */
+    #codeColor, 
         #codeColor *,
         #codeColor code,
         #codeColor h2,
@@ -22,78 +22,84 @@
         }*/     
         /* PRE ট্যাগের স্টাইল: কোড ব্লক */
         #codeColor {
-            background: #f9f9f9; 
-            width: 75%;
-            font-size: 14px;
-            line-height: 1.5;
-            transition: all 0.3s ease;  /*মসৃণ পরিবর্তন*/
-        }    
-        #num1 {
-            font-size: 18px;
-            margin-top: 15px;
-            font-weight: bold;
-        }       
-        button {
-            padding: 10px 15px;
-            margin-right: 10px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }       
-        #codeColor h2 {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+      background: #f9f9f9;
+      width: 75%;
+      font-size: 14px;
+      line-height: 1.5;
+      transition: all 0.3s ease; /*মসৃণ পরিবর্তন*/
+    }
+    #num1 {
+      font-size: 18px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    #codeColor h2 {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <html>
-<body>
-    <!doctype html>
-<head>
-    <title>2. statements</title>
-        <style>
+  <body>
+    <!DOCTYPE html>
+    <head>
+      <title>2. statements</title>
+      <style>
         body {
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',sans-serif;
-            color: #1a1a1a;
+          font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+            "Segoe UI", sans-serif;
+          color: #1a1a1a;
         }
         pre {
-            background: #f9f9f9;
-            border:1px solid #e5e5e5;
-            padding: 5px;
-            line-height: 12px;
-            width: 75%;
-            font-size: 13px;
-            /* display: block; */
-            /* margin: 0px 1%; */
-            /* font-family: 'Inter',
+          background: #f9f9f9;
+          border: 1px solid #e5e5e5;
+          padding: 5px;
+          line-height: 12px;
+          width: 75%;
+          font-size: 13px;
+          /* display: block; */
+          /* margin: 0px 1%; */
+          /* font-family: 'Inter',
             system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
         }
-    </style>
-</head>
-<html>
-    <body>
+      </style>
+    </head>
+    <html>
+      <body>
         <h2>31Dec2025 12:48:56 PM</h2>
         <h3>1st JavaScript Statements</h3>
-        <p>A JavsScript <b>program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+        <p>
+          A JavsScript <b>program</b> is a list of <b>statements</b> to be
+          executed by a computer.
+        </p>
 
         <p id="staOne"></p>
         <p id="staTwo"></p>
         <p>In HTML, JavaScript statements are executed by the browser.</p>
         <p id="staThree"></p>
-        <P id="staFour"></P>
+        <p id="staFour"></p>
 
         <script>
-            let x, y, z ; // Statement 1
-            x = 5; // Statement 2
-            y = 6; // Statement 3
-            z = x + y; // Statement 4
-            a = 10;
-            b = 20;
-            c = a * b;
+          let x, y, z; // Statement 1
+          x = 5; // Statement 2
+          y = 6; // Statement 3
+          z = x + y; // Statement 4
+          a = 10;
+          b = 20;
+          c = a * b;
 
-            document.getElementById("staOne").innerHTML = "The value of z is " + z;
-            document.getElementById("staTwo").innerHTML = "The value of c is " + c;
-            document.getElementById("staThree").innerHTML = "Hello Dolly";
-            document.getElementById("staFour").innerHTML = "Hello Abdullah";
+          document.getElementById("staOne").innerHTML =
+            "The value of z is " + z;
+          document.getElementById("staTwo").innerHTML =
+            "The value of c is " + c;
+          document.getElementById("staThree").innerHTML = "Hello Dolly";
+          document.getElementById("staFour").innerHTML = "Hello Abdullah";
         </script>
 
         <h3>Semicolons (;)</h3>
@@ -102,30 +108,36 @@
         <p id="staSix"></p>
 
         <script>
-            let a, b, c;
-            a = 5; b = 6; s = a + b; u = a * b;
-            document.getElementById("staFive").innerHTML = s;
-            document.getElementById("staSix").innerHTML = "The Multiple is " + u;
+          let a, b, c;
+          a = 5;
+          b = 6;
+          s = a + b;
+          u = a * b;
+          document.getElementById("staFive").innerHTML = s;
+          document.getElementById("staSix").innerHTML = "The Multiple is " + u;
         </script>
-        
+
         <h3>2nd JavaScript White Space and Line Lenght and Line Breaks</h3>
-        <p>The best place to break a code line is after an operator or a comma.</p>
-        <p>For best readability, programmers oftern like to avoid code lines longer then <b>80 characters.</b></p>
-        
+        <p>
+          The best place to break a code line is after an operator or a comma.
+        </p>
+        <p>
+          For best readability, programmers oftern like to avoid code lines
+          longer then <b>80 characters.</b>
+        </p>
+
         <p id="breakOne"></p>
         <p id="breakTwo"></p>
 
         <script>
-            document.getElementById("breakOne").innerHTML =
-            "Hello Dolly!";
-            document.getElementById("breakTwo").innerHTML =
-            "Hello Abdullah"; 
+          document.getElementById("breakOne").innerHTML = "Hello Dolly!";
+          document.getElementById("breakTwo").innerHTML = "Hello Abdullah";
         </script>
 
         <h3>3rd JavaScript Code Blocks</h3>
 
         <p>JavaScript code blocks are written between { and }</p>
-        
+
         <p id="blockOne"></p>
         <p id="blockTwo"></p>
         <button type="button" onclick="myFunction()">Click Me!</button>
@@ -147,48 +159,55 @@
         <p id="blockEleven"></p>
 
         <script>
-            function myFunction() {
-                document.getElementById("blockOne").innerHTML = "Hello Dolly!";
-                document.getElementById("blockTwo").innerHTML = "Hello Abdullah";
-            }
+          function myFunction() {
+            document.getElementById("blockOne").innerHTML = "Hello Dolly!";
+            document.getElementById("blockTwo").innerHTML = "Hello Abdullah";
+          }
 
-            function myFunction1() {
-                document.getElementById("blockThree").innerHTML = "Hello Nur Mohammad";
-                document.getElementById("blockFour").innerHTML = "Hello Asmul Husna";
-            }
-            function myFunction2() {
-                document.getElementById("blockSix").innerHTML = "Hello Bangladesh";
-                document.getElementById("blockSeven").innerHTML = "Hello My Mother Contry";
-            }
+          function myFunction1() {
+            document.getElementById("blockThree").innerHTML =
+              "Hello Nur Mohammad";
+            document.getElementById("blockFour").innerHTML =
+              "Hello Asmul Husna";
+          }
+          function myFunction2() {
+            document.getElementById("blockSix").innerHTML = "Hello Bangladesh";
+            document.getElementById("blockSeven").innerHTML =
+              "Hello My Mother Contry";
+          }
 
-            function myFunction3() {
-                document.getElementById("blockEight").innerHTML = "Hello Dhake";
-                document.getElementById("blockNine").innerHTML = "Hello Cox's Bazar";
-            }
-            function myFunction4() {
-                document.getElementById("blockTen").innerHTML = "Hello My Village";
-                document.getElementById("blockEleven").innerHTML = "Hello My Brother";
-            }
-
+          function myFunction3() {
+            document.getElementById("blockEight").innerHTML = "Hello Dhake";
+            document.getElementById("blockNine").innerHTML =
+              "Hello Cox's Bazar";
+          }
+          function myFunction4() {
+            document.getElementById("blockTen").innerHTML = "Hello My Village";
+            document.getElementById("blockEleven").innerHTML =
+              "Hello My Brother";
+          }
         </script>
-    
-    <button type="button" id="textChangeUpBtn">
-        ➕➕➕ টেক্সট কালার 🎨
-    </button>
-    
-    <button type="button" id="bgChangeBtn">
-        🖼️ ব্যাকগ্রাউন্ড কালার 🌈
-    </button>
-    
-    <button type="button" id="fontChangeBtn">
-        🆎 ফন্ট পরিবর্তন ✒️
-    </button>
-    
-    <button type="button" onclick="document.getElementById('num1').innerHTML = 'নাম পরিবর্তন: abdullah'">🎲নাম পরিবর্তন🏆</button>
-        
-    <p id="num1">Clicks: 0</p>
 
-    <pre id="codeColor"> 	
+        <button type="button" id="textChangeUpBtn">
+          ➕➕➕ টেক্সট কালার 🎨
+        </button>
+
+        <button type="button" id="bgChangeBtn">
+          🖼️ ব্যাকগ্রাউন্ড কালার 🌈
+        </button>
+
+        <button type="button" id="fontChangeBtn">🆎 ফন্ট পরিবর্তন ✒️</button>
+
+        <button
+          type="button"
+          onclick="document.getElementById('num1').innerHTML = 'নাম পরিবর্তন: abdullah'"
+        >
+          🎲নাম পরিবর্তন🏆
+        </button>
+
+        <p id="num1">Clicks: 0</p>
+
+        <pre id="codeColor"> 	
         <div id="marquee-container">
             <h2 id="marquee-text">I AM ABDULLAH 😊!</h2>
         </div>
@@ -302,115 +321,115 @@
     &lt;/html&gt;
     </pre>
 
-    <script>
-    // **********************************************
-    // **************** জাভাস্ক্রিপ্ট অংশ ****************
-    // **********************************************
-    
-    // ১. টেক্সট কালারের জন্য অ্যারে
-    const TEXT_COLOR_LIST = [
-        "#1d4ed8", // blue
-        "#2563eb",
-        "#0ea5e9", // sky
-        "#0284c7",
+        <script>
+          // **********************************************
+          // **************** জাভাস্ক্রিপ্ট অংশ ****************
+          // **********************************************
 
-        "#047857", // green
-        "#059669",
-        "#16a34a",
+          // ১. টেক্সট কালারের জন্য অ্যারে
+          const TEXT_COLOR_LIST = [
+            "#1d4ed8", // blue
+            "#2563eb",
+            "#0ea5e9", // sky
+            "#0284c7",
 
-        "#0f766e", // teal
-        "#14b8a6",
-    ];
+            "#047857", // green
+            "#059669",
+            "#16a34a",
 
-    // ২. ব্যাকগ্রাউন্ড কালারের জন্য অ্যারে
-    const BG_COLOR_LIST = [
-        '#E0F7FA',
-        '#FBE9E7',
-        '#212121',
-        '#E8F5E9',
-        "#ffffff",
-        "#f9f9f9",
-        "#f8fafc",
-        "#f2f2f2",
-        "#fafafa",
-        "#f5f5f5",
-    ];
+            "#0f766e", // teal
+            "#14b8a6",
+          ];
 
-    // ৩. ফন্ট পরিবর্তনের জন্য অ্যারে 
-    const FONT_LIST = [
-        'Arial, sans-serif', 
-        'Courier New, monospace', 
-        'Georgia, serif', 
-        'cursive'
-    ];
+          // ২. ব্যাকগ্রাউন্ড কালারের জন্য অ্যারে
+          const BG_COLOR_LIST = [
+            "#E0F7FA",
+            "#FBE9E7",
+            "#212121",
+            "#E8F5E9",
+            "#ffffff",
+            "#f9f9f9",
+            "#f8fafc",
+            "#f2f2f2",
+            "#fafafa",
+            "#f5f5f5",
+          ];
 
+          // ৩. ফন্ট পরিবর্তনের জন্য অ্যারে
+          const FONT_LIST = [
+            "Arial, sans-serif",
+            "Courier New, monospace",
+            "Georgia, serif",
+            "cursive",
+          ];
 
-    // কাউন্টার ও এলিমেন্ট সিলেকশন
-    let currentColorIndex = -1;
-    let currentBgIndex = -1;
-    let currentFontIndex = -1;
+          // কাউন্টার ও এলিমেন্ট সিলেকশন
+          let currentColorIndex = -1;
+          let currentBgIndex = -1;
+          let currentFontIndex = -1;
 
-    // টার্গেট এলিমেন্টসমূহ
-    const textChangeUpBtn = document.getElementById('textChangeUpBtn');
-    const bgChangeBtn = document.getElementById('bgChangeBtn');
-    const fontChangeBtn = document.getElementById('fontChangeBtn');
-    
-    const codeBlock = document.getElementById('codeColor'); // PRE ট্যাগ
-    const num1Element = document.getElementById('num1');    // P ট্যাগ
+          // টার্গেট এলিমেন্টসমূহ
+          const textChangeUpBtn = document.getElementById("textChangeUpBtn");
+          const bgChangeBtn = document.getElementById("bgChangeBtn");
+          const fontChangeBtn = document.getElementById("fontChangeBtn");
 
-    // **********************************************
-    // ১. টেক্সট কালার পরিবর্তনের ফাংশন (রং পরিবর্তন নিশ্চিত)
-    // **********************************************
-    function updateTextColor() {
-        currentColorIndex ++;
-        let nextColorIndex = currentColorIndex % TEXT_COLOR_LIST.length; 
-        const nextColor = TEXT_COLOR_LIST[nextColorIndex];
+          const codeBlock = document.getElementById("codeColor"); // PRE ট্যাগ
+          const num1Element = document.getElementById("num1"); // P ট্যাগ
 
-        // 1. PRE ট্যাগের রং পরিবর্তন করা
-        codeBlock.style.color = nextColor; 
-        
-        // 2. ভেতরের সকল ট্যাগগুলোর রং পরিবর্তন নিশ্চিত করা
-        const innerElements = codeBlock.querySelectorAll('*');
-        innerElements.forEach(element => {
-            element.style.color = nextColor;
-        });
+          // **********************************************
+          // ১. টেক্সট কালার পরিবর্তনের ফাংশন (রং পরিবর্তন নিশ্চিত)
+          // **********************************************
+          function updateTextColor() {
+            currentColorIndex++;
+            let nextColorIndex = currentColorIndex % TEXT_COLOR_LIST.length;
+            const nextColor = TEXT_COLOR_LIST[nextColorIndex];
 
-        // 3. P ট্যাগে সংখ্যা এবং রং সেট করা
-        num1Element.innerHTML = "Clicks (Color): " + currentColorIndex;
-        num1Element.style.color = nextColor;
-    }
+            // 1. PRE ট্যাগের রং পরিবর্তন করা
+            codeBlock.style.color = nextColor;
 
-    // **********************************************
-    // ২. ব্যাকগ্রাউন্ড কালার পরিবর্তনের ফাংশন
-    // **********************************************
-    function updateBgChange() {
-        currentBgIndex++;
-        let nextBgIndex = currentBgIndex % BG_COLOR_LIST.length;
-        const nextBgColor = BG_COLOR_LIST[nextBgIndex];
-        
-        codeBlock.style.backgroundColor = nextBgColor;
-    }
+            // 2. ভেতরের সকল ট্যাগগুলোর রং পরিবর্তন নিশ্চিত করা
+            const innerElements = codeBlock.querySelectorAll("*");
+            innerElements.forEach((element) => {
+              element.style.color = nextColor;
+            });
 
-    // **********************************************
-    // ৩. ফন্ট পরিবর্তনের ফাংশন
-    // **********************************************
-    function updateFontChange() {
-        currentFontIndex++;
-        let nextFontIndex = currentFontIndex % FONT_LIST.length;
-        const nextFont = FONT_LIST[nextFontIndex];
-        
-        // CSS Inheritance এর কারণে ভেতরের সব ফন্ট পরিবর্তন হবে।
-        codeBlock.style.fontFamily = nextFont;
-        num1Element.style.fontFamily = nextFont;
-    }
+            // 3. P ট্যাগে সংখ্যা এবং রং সেট করা
+            num1Element.innerHTML = "Clicks (Color): " + currentColorIndex;
+            num1Element.style.color = nextColor;
+          }
 
-    // **********************************************
-    // ইভেন্ট লিসেনারগুলো যোগ করা হলো
-    // **********************************************
-    textChangeUpBtn.addEventListener('click', updateTextColor);
-    bgChangeBtn.addEventListener('click', updateBgChange);
-    fontChangeBtn.addEventListener('click', updateFontChange);
-    </script>
+          // **********************************************
+          // ২. ব্যাকগ্রাউন্ড কালার পরিবর্তনের ফাংশন
+          // **********************************************
+          function updateBgChange() {
+            currentBgIndex++;
+            let nextBgIndex = currentBgIndex % BG_COLOR_LIST.length;
+            const nextBgColor = BG_COLOR_LIST[nextBgIndex];
 
-</body>
+            codeBlock.style.backgroundColor = nextBgColor;
+          }
+
+          // **********************************************
+          // ৩. ফন্ট পরিবর্তনের ফাংশন
+          // **********************************************
+          function updateFontChange() {
+            currentFontIndex++;
+            let nextFontIndex = currentFontIndex % FONT_LIST.length;
+            const nextFont = FONT_LIST[nextFontIndex];
+
+            // CSS Inheritance এর কারণে ভেতরের সব ফন্ট পরিবর্তন হবে।
+            codeBlock.style.fontFamily = nextFont;
+            num1Element.style.fontFamily = nextFont;
+          }
+
+          // **********************************************
+          // ইভেন্ট লিসেনারগুলো যোগ করা হলো
+          // **********************************************
+          textChangeUpBtn.addEventListener("click", updateTextColor);
+          bgChangeBtn.addEventListener("click", updateBgChange);
+          fontChangeBtn.addEventListener("click", updateFontChange);
+        </script>
+      </body>
+    </html>
+  </body>
 </html>

@@ -1,103 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <body>
-        <h2 id="num">Start!</h2>
+  <body>
+    <h2 id="num">Start!</h2>
 
-        <button onclick="updateNumberInc()">Number Increment ++😎</button>
-        <button onclick="updateNumberDec()">Number Decrement --🤔</button>
+    <button onclick="updateNumberInc()">Number Increment ++😎</button>
+    <button onclick="updateNumberDec()">Number Decrement --🤔</button>
 
-        <!-- !start-->
-        <h2>2nd Practrice</h2>
+    <!-- !start-->
+    <h2>2nd Practrice</h2>
 
-        <h2 id="two">Start Again🥇</h2>
-        <button onclick="decrement()">➖➖</button>
-        <button onclick="increment()">➕➕</button>
+    <h2 id="two">Start Again🥇</h2>
+    <button onclick="decrement()">➖➖</button>
+    <button onclick="increment()">➕➕</button>
 
-        <h2>3rd Practice😁</h2>
+    <h2>3rd Practice😁</h2>
 
-        <h2 id="three">And Start😒</h2>
-        <button onclick="increment1()">➕</button>
-        <button onclick="decrement1()">➖</button>
+    <h2 id="three">And Start😒</h2>
+    <button onclick="increment1()">➕</button>
+    <button onclick="decrement1()">➖</button>
 
-        <script>
-            let currentNumber = 0;
-            function updateNumberInc() {
-                //increment 
-                currentNumber ++;
-                document.getElementById('num').innerHTML = currentNumber;
-                //color condition
-                if (currentNumber % 2 === 0) {
-                    document.getElementById('num').style.color = '#34ace0';
-                }
-                else {
-                    document.getElementById('num').style.color = '#ffb142';
-                }
-            }
-            
-            function updateNumberDec() {
-                //decrement
-                currentNumber --;
-                document.getElementById('num').innerHTML = currentNumber;
-                //color
-                if (currentNumber % 2 === 0) {
-                    document.getElementById('num').style.color = '#ff793f';
-                }
-                else {
-                    document.getElementById('num').style.color = '#706fd3';
-                }
-                
-            }
+    <script>
+      let currentNumber = 0;
+      function updateNumberInc() {
+        //increment
+        currentNumber++;
+        document.getElementById("num").innerHTML = currentNumber;
+        //color condition
+        if (currentNumber % 2 === 0) {
+          document.getElementById("num").style.color = "#34ace0";
+        } else {
+          document.getElementById("num").style.color = "#ffb142";
+        }
+      }
 
-            let selNumber = 0;
-            function increment() {
-                selNumber ++;
-                document.getElementById('two').innerHTML = selNumber;
-                if (selNumber % 2 === 0) {
-                    document.getElementById('two').style.color = 'tomato';
-                }
-                else {
-                    document.getElementById('two').style.color = 'green';
-                }
-            }
-            function decrement() {
-                if (selNumber > 0) {
-                selNumber --;
-                document.getElementById('two').innerHTML = selNumber;
-                if (selNumber % 2 === 0) {
-                    document.getElementById('two').style.color = '#aaa69d';
-                }
-                else {
-                    document.getElementById('two').style.color = '#b33939';
-                }
-                }
-            }
-            
-            let arrayUp1 = 0;
-            function increment1() {
-                arrayUp1 ++;
-                let COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
-                // index num
-                let nextColorIndex = arrayUp1 % COLOR_LIST.length;
+      function updateNumberDec() {
+        //decrement
+        currentNumber--;
+        document.getElementById("num").innerHTML = currentNumber;
+        //color
+        if (currentNumber % 2 === 0) {
+          document.getElementById("num").style.color = "#ff793f";
+        } else {
+          document.getElementById("num").style.color = "#706fd3";
+        }
+      }
 
-                document.getElementById('three').innerHTML = arrayUp1;
+      let selNumber = 0;
+      function increment() {
+        selNumber++;
+        document.getElementById("two").innerHTML = selNumber;
+        if (selNumber % 2 === 0) {
+          document.getElementById("two").style.color = "tomato";
+        } else {
+          document.getElementById("two").style.color = "green";
+        }
+      }
+      function decrement() {
+        if (selNumber > 0) {
+          selNumber--;
+          document.getElementById("two").innerHTML = selNumber;
+          if (selNumber % 2 === 0) {
+            document.getElementById("two").style.color = "#aaa69d";
+          } else {
+            document.getElementById("two").style.color = "#b33939";
+          }
+        }
+      }
 
-                document.getElementById('three').style.color = COLOR_LIST[nextColorIndex];
-            }
-            function decrement1() {
-                if(arrayUp1 > 0) {
-                arrayUp1 --;
-                let COLOR_LIST1 = ['red', 'blue', 'yellow', 'purple', 'cyan'];
-                let nextColorIndex1 = arrayUp1 % COLOR_LIST1.length;
+      let arrayUp1 = 0;
+      function increment1() {
+        arrayUp1++;
+        let COLOR_LIST = ["red", "blue", "yellow", "purple", "cyan"];
+        // index num
+        let nextColorIndex = arrayUp1 % COLOR_LIST.length;
 
-                document.getElementById('three').innerHTML = arrayUp1;
-                document.getElementById('three').style.color = COLOR_LIST1[nextColorIndex1];
-                }
-            }
-        
+        document.getElementById("three").innerHTML = arrayUp1;
 
-        </script>
+        document.getElementById("three").style.color =
+          COLOR_LIST[nextColorIndex];
+      }
+      function decrement1() {
+        if (arrayUp1 > 0) {
+          arrayUp1--;
+          let COLOR_LIST1 = ["red", "blue", "yellow", "purple", "cyan"];
+          let nextColorIndex1 = arrayUp1 % COLOR_LIST1.length;
 
-
-
-    </body>
+          document.getElementById("three").innerHTML = arrayUp1;
+          document.getElementById("three").style.color =
+            COLOR_LIST1[nextColorIndex1];
+        }
+      }
+    </script>
+  </body>
 </html>

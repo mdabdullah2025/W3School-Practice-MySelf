@@ -1,32 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="5.1 style.css">
-    <style>
-        body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI',sans-serif;
-            color: #1a1a1a;
-        }
-        #codeColor {
-            background: #f9f9f9;
-            border:1px solid #e5e5e5;
-            padding: 5px;
-            line-height: 12px;
-            width: 75%;
-            font-size: 13px;
-            /* display: block; */
-            /* margin: 0px 1%; */
-            /* font-family: 'Inter',
+  <title></title>
+  <link rel="stylesheet" href="5.1 style.css" />
+  <style>
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #1a1a1a;
+    }
+    #codeColor {
+      background: #f9f9f9;
+      border: 1px solid #e5e5e5;
+      padding: 5px;
+      line-height: 12px;
+      width: 75%;
+      font-size: 13px;
+      /* display: block; */
+      /* margin: 0px 1%; */
+      /* font-family: 'Inter',
             system-ui, -apple-system, 'Segoe UI', sans-serif; */
-        }
-        #mySelf {
-            direction: left;
-        }
-    </style>
+    }
+    #mySelf {
+      direction: left;
+    }
+  </style>
 </head>
 <html>
-    <body>
-        <!-- <div class="marquee-container">
+  <body>
+    <!-- <div class="marquee-container">
         <h2 class="marquee-text">I AM ABDULLAH 😊!</h2>
         </div>
 
@@ -38,31 +38,33 @@
         ➕➕ 🏆🎲
         </button> -->
 
-        <button type="button" id="colorChangeUpBtn">
-            ➕➕➕ 🎲🏆
-        </button>
-        
-        <button type="button" onclick="document.getElementById('num1').innerHTML = 'abdullah'">🎲Number Change🏆</button>
-            
-        <!-- <h1 id="codeColor">start</h1> -->
-        <!-- <h1 id="codeColor">start</h1> -->
+    <button type="button" id="colorChangeUpBtn">➕➕➕ 🎲🏆</button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('num1').innerHTML = 'abdullah'"
+    >
+      🎲Number Change🏆
+    </button>
+
+    <!-- <h1 id="codeColor">start</h1> -->
+    <!-- <h1 id="codeColor">start</h1> -->
     <p id="num1"></p>
     <script>
-    //   let currentColor = 0;
+      //   let currentColor = 0;
 
-      const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+      const COLOR_LIST = ["red", "blue", "yellow", "purple", "cyan"];
 
       let currentColorIndex = -1;
 
-      const colorChangeUp = document.getElementById('colorChangeUpBtn');
+      const colorChangeUp = document.getElementById("colorChangeUpBtn");
 
-      const targetElement = document.getElementById('codeColor');
+      const targetElement = document.getElementById("codeColor");
 
-      const num1Element = document.getElementById('num1');
-
+      const num1Element = document.getElementById("num1");
 
       function updateChangeUp() {
-        currentColorIndex ++;
+        currentColorIndex++;
 
         let nextColorIndex = currentColorIndex % COLOR_LIST.length;
 
@@ -77,25 +79,22 @@
         // document.getElementById('num1').innerHTML = currentColor;
         // document.getElementById('num1').style.color = COLOR_LIST[nextColorIndex];
         // এখন `colorChangeUp` ভ্যারিয়েবলে আমাদের HTML বাটনটি সংরক্ষিত আছে।
-        
       }
-      colorChangeUp.addEventListener('click', updateChangeUp);
-        // আমরা বাটনটিকে বলছি, "কেউ ক্লিক করলে updateNumberInc ফাংশনটি চালাও।"
-
+      colorChangeUp.addEventListener("click", updateChangeUp);
+      // আমরা বাটনটিকে বলছি, "কেউ ক্লিক করলে updateNumberInc ফাংশনটি চালাও।"
     </script>
 
-
-        <!-- ! এখানে সকল কোড গুলো কোড আকারে দেখার জন্য JavaScript দ্বারা Interactive-->
-        <!-- <button type="button" onclick="updateNumberInc()">🎯Code Color Change☠️</button>
+    <!-- ! এখানে সকল কোড গুলো কোড আকারে দেখার জন্য JavaScript দ্বারা Interactive-->
+    <!-- <button type="button" onclick="updateNumberInc()">🎯Code Color Change☠️</button>
          -->
-        <!-- <script>
+    <!-- <script>
             function preFunction() {
                 document.getElementById("pre").style.color = "red";
             }
         </script> -->
-        
-        <!-- ! এখানে সকল কোড গুলো কোড আকারে দেখার জন্য pre tag ব্যবহার করা হয়েছে-->
-        <pre id="codeColor">  
+
+    <!-- ! এখানে সকল কোড গুলো কোড আকারে দেখার জন্য pre tag ব্যবহার করা হয়েছে-->
+    <pre id="codeColor">  
             <code>
                 <div class="marquee-container">
                     <h2 class="marquee-text">I AM ABDULLAH 😊!</h2>
@@ -104,6 +103,5 @@
 
             </code>
         </pre>
-
-    </body>
+  </body>
 </html>

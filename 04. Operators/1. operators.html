@@ -1,111 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Operatiors</title>
-    </head>
-    <body>
-        <h2>02 Jan 2026 11:14:10 PM</h2>
-        <h3>1st JavaScript Operators  =</h3>
-        <h4>The = Operator</h4>
-        <p id="oper"></p>
+  <head>
+    <title>Operatiors</title>
+  </head>
+  <body>
+    <h2>02 Jan 2026 11:14:10 PM</h2>
+    <h3>1st JavaScript Operators =</h3>
+    <h4>The = Operator</h4>
+    <p id="oper"></p>
 
-        <p>The Assignment (=) Operator</p>
-        <p id="oper1"></p>
+    <p>The Assignment (=) Operator</p>
+    <p id="oper1"></p>
 
-        <script>
-            let oper = 10;
-            document.getElementById("oper").innerHTML = oper;
+    <script>
+      let oper = 10;
+      document.getElementById("oper").innerHTML = oper;
 
-            // Assign the value 5 to oper1
-            let oper1 = 5;
-            // Assign the value 2 to oper2
-            let oper2 = 2;
-            // Assign the value oper1 + oper2 to operTotal
-            let operTotal = oper1 + oper2;
-            // Display operTotal
-            document.getElementById("oper1").innerHTML = "The sum of oper1 + oper2 is: " + operTotal;
-        </script>
+      // Assign the value 5 to oper1
+      let oper1 = 5;
+      // Assign the value 2 to oper2
+      let oper2 = 2;
+      // Assign the value oper1 + oper2 to operTotal
+      let operTotal = oper1 + oper2;
+      // Display operTotal
+      document.getElementById("oper1").innerHTML =
+        "The sum of oper1 + oper2 is: " + operTotal;
+    </script>
 
-        <h3>2nd JavaScript Addition</h3>
-        <h4>The + Operator</h4>
-        <p id="add"></p>
-        <h4>JavaScript Multiplication *</h4>
-        <p id="mul"></p>
+    <h3>2nd JavaScript Addition</h3>
+    <h4>The + Operator</h4>
+    <p id="add"></p>
+    <h4>JavaScript Multiplication *</h4>
+    <p id="mul"></p>
 
-        <script>
-            let add = 5;
-            let add1 = 2;
-            let addTotal = add + add1;
-            document.getElementById("add").innerHTML = addTotal;
+    <script>
+      let add = 5;
+      let add1 = 2;
+      let addTotal = add + add1;
+      document.getElementById("add").innerHTML = addTotal;
 
-            let mul = 5;
-            let mul1 = 2;
-            let multi = mul * mul1;
-            document.getElementById("mul").innerHTML = multi;
-        </script>
+      let mul = 5;
+      let mul1 = 2;
+      let multi = mul * mul1;
+      document.getElementById("mul").innerHTML = multi;
+    </script>
 
-        <h3>3rd JavaScript Arithmetic Operators</h3>
-        <p>A typical arithmetic operation two numbers (or expressions) and producess a new number.</p>
-        <p id="ari"></p>
+    <h3>3rd JavaScript Arithmetic Operators</h3>
+    <p>
+      A typical arithmetic operation two numbers (or expressions) and producess
+      a new number.
+    </p>
+    <p id="ari"></p>
 
-        <h4>JavaScript String Addition</h4>
-        <p>The + operator concatenates (adds) strings.</p>
-        <p id="str"></p>
+    <h4>JavaScript String Addition</h4>
+    <p>The + operator concatenates (adds) strings.</p>
+    <p id="str"></p>
 
-        <h4>The += Operatior</h4>
-        <p>The assignment operator += can concatenate strings.</p>
-        <p id="str1"></p>
+    <h4>The += Operatior</h4>
+    <p>The assignment operator += can concatenate strings.</p>
+    <p id="str1"></p>
 
-        <h4>Adding Strings and Numbers</h4>
-        <p>Adding a number and string, return a string</p>
-        <p id="str2"></p>
+    <h4>Adding Strings and Numbers</h4>
+    <p>Adding a number and string, return a string</p>
+    <p id="str2"></p>
 
-        <h4>JavaScript Assignment Operators</h4>
+    <h4>JavaScript Assignment Operators</h4>
 
-        <p id="str3"></p>
+    <p id="str3"></p>
 
-        <script>
-            let ari = 3;
-            let arith = (100 + 50) * ari;
-            document.getElementById('ari').innerHTML = arith;
+    <script>
+      let ari = 3;
+      let arith = (100 + 50) * ari;
+      document.getElementById("ari").innerHTML = arith;
 
-            let text1 = "John";
-            let text2 = "Doe";
-            let text3 = text1 + " " + text2;
-            document.getElementById("str").innerHTML = text3;
+      let text1 = "John";
+      let text2 = "Doe";
+      let text3 = text1 + " " + text2;
+      document.getElementById("str").innerHTML = text3;
 
-            let text4 = "What a very ";
-            text4 += "nice day";
-            document.getElementById("str1").innerHTML = text4;
+      let text4 = "What a very ";
+      text4 += "nice day";
+      document.getElementById("str1").innerHTML = text4;
 
-            let text5 = 5 + 5;
-            let text6 = "5" + 5;
-            let text7 = "Hello" + 5;
-            document.getElementById("str2").innerHTML = text5 + "<br/>"  + text6 + "<br/>" + text7;
+      let text5 = 5 + 5;
+      let text6 = "5" + 5;
+      let text7 = "Hello" + 5;
+      document.getElementById("str2").innerHTML =
+        text5 + "<br/>" + text6 + "<br/>" + text7;
 
-            var num1 = 10;
-            num1 += 5;
-            document.getElementById("str3").innerHTML = num1;
-        </script>
+      var num1 = 10;
+      num1 += 5;
+      document.getElementById("str3").innerHTML = num1;
+    </script>
 
-        <h3>2nd JavaScript Comparison Operators</h3>
-        <h4>The > (greater than) Operator</h4>
-        <p>Assign 5 to com, and display the value of the comparision ( com > 8 ).</p>
-        <p id="com"></p>
+    <h3>2nd JavaScript Comparison Operators</h3>
+    <h4>The > (greater than) Operator</h4>
+    <p>
+      Assign 5 to com, and display the value of the comparision ( com > 8 ).
+    </p>
+    <p id="com"></p>
 
-        <h4>JavaScript String Operators</h4>
-        <p>All conditional operatiors can be used on both numbers and strings.</p>
-        <p id="str4"></p>
+    <h4>JavaScript String Operators</h4>
+    <p>All conditional operatiors can be used on both numbers and strings.</p>
+    <p id="str4"></p>
 
-        <script>
-            let com = 5;
-            document.getElementById("com").innerHTML = (com > 8); 
+    <script>
+      let com = 5;
+      document.getElementById("com").innerHTML = com > 8;
 
-            let text8 = "A";
-            let text9 = "B";
-            let result = text8 < text9;
-            document.getElementById("str4").innerHTML = "Is A less than B? " + result;
-        </script>
-
-    </body>
+      let text8 = "A";
+      let text9 = "B";
+      let result = text8 < text9;
+      document.getElementById("str4").innerHTML = "Is A less than B? " + result;
+    </script>
+  </body>
 </html>

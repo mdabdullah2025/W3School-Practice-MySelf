@@ -1,154 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>4 variable type</title>
-    </head>
-    <body>
-        <h2>02 Jan 2026 9:48:30 PM</h2>
-        <h3>1st JavaScript Datatypes</h3>
-        <h4>
-            JavaScript has 8 Datatypes
-            A JavaScript variable can hold 8 types data:
-            1. String, 2. Number, 3, Bigint, 4. Boolean, 5. Object, 6. Undefined, 7. Null, 8. Symbol
-        </h4>
+  <head>
+    <title>4 variable type</title>
+  </head>
+  <body>
+    <h2>02 Jan 2026 9:48:30 PM</h2>
+    <h3>1st JavaScript Datatypes</h3>
+    <h4>
+      JavaScript has 8 Datatypes A JavaScript variable can hold 8 types data: 1.
+      String, 2. Number, 3, Bigint, 4. Boolean, 5. Object, 6. Undefined, 7.
+      Null, 8. Symbol
+    </h4>
 
-        <script>
-            // String
-            let color = "Yellow";
-            let lastName = "Johnson";
+    <script>
+      // String
+      let color = "Yellow";
+      let lastName = "Johnson";
 
-            // Number
-            let length = 16;
-            let weight = 7.5;
-            
-            // BigInt
-            let x = 1234567890123456789012345n;
-            let y = BigInt(1234567890123456789012345);
+      // Number
+      let length = 16;
+      let weight = 7.5;
 
-            // Boolean
-            let x1 = true;
-            let y1 = false;
+      // BigInt
+      let x = 1234567890123456789012345n;
+      let y = BigInt(1234567890123456789012345);
 
-            // Object
-            const person = {firstName:"John", lastName:"Doe"};
+      // Boolean
+      let x1 = true;
+      let y1 = false;
 
-            // Array Object
-            const cars = ["Saab", "Volvo", "BMW"];
+      // Object
+      const person = { firstName: "John", lastName: "Doe" };
 
-            // Date Object
-            const date = new Date ("(2026-01-02");
+      // Array Object
+      const cars = ["Saab", "Volvo", "BMW"];
 
-            // Null
-            let x2 = null;
-            let y2 = null;
+      // Date Object
+      const date = new Date("(2026-01-02");
 
-            // Symbol
-            const x3 = Symbol();
-            const y3 = Symbol();
-        </script>
+      // Null
+      let x2 = null;
+      let y2 = null;
 
-        <h3>2nd The typeof Operator</h3>
-        <p>The typeof operator returns the type of a variable or an expression.</p>
-        <p id="type"></p>
-        <p id="type1"></p>
+      // Symbol
+      const x3 = Symbol();
+      const y3 = Symbol();
+    </script>
 
-        <script>
-            document.getElementById("type").innerHTML = typeof "" + "<br/>" +
-            typeof "John" + "<br/>" +
-            typeof "Jon Doe";
+    <h3>2nd The typeof Operator</h3>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+    <p id="type"></p>
+    <p id="type1"></p>
 
-            document.getElementById("type1").innerHTML =
-            typeof 0 + "<br/>" +
-            typeof 314 + "<br/>" +
-            typeof 3.14 + "<br/>" +
-            typeof (3) + "<br/>" +
-            typeof (3 + 4);
-        </script>
+    <script>
+      document.getElementById("type").innerHTML =
+        typeof "" + "<br/>" + typeof "John" + "<br/>" + typeof "Jon Doe";
 
-        <h3>3rd JavaScript Strings</h3>
-        <p>Strings are written with quotes. You can use single or double quotes:</p>
-        <P id="str"></P>
+      document.getElementById("type1").innerHTML =
+        typeof 0 +
+        "<br/>" +
+        typeof 314 +
+        "<br/>" +
+        typeof 3.14 +
+        "<br/>" +
+        typeof 3 +
+        "<br/>" +
+        typeof (3 + 4);
+    </script>
 
-        <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
-        <p id="str1"></p>
+    <h3>3rd JavaScript Strings</h3>
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+    <p id="str"></p>
 
-        <script>
-            let carName1 = "Volvo XC60";
-            let carName2 = 'Volvo XC60';
-            document.getElementById("str").innerHTML = carName1 + "<br/>" + carName2;
+    <p>
+      You can use quotes inside a string, as long as they don't match the quotes
+      surrounding the string:
+    </p>
+    <p id="str1"></p>
 
-            let answer1 = "It's alright";
-            let answer2 = "He is called 'Johnny'";
-            let answer3 = 'He is called "Johnny"';
-            document.getElementById("str1").innerHTML =
-            answer1 + "<br/>" +
-            answer2 + "<br/>" +
-            answer3;
-        </script>
+    <script>
+      let carName1 = "Volvo XC60";
+      let carName2 = "Volvo XC60";
+      document.getElementById("str").innerHTML = carName1 + "<br/>" + carName2;
 
-        <h3>4th JavaScript Numbers</h3>
-        <p>Numbers can be written with, or without decimals:</p>
-        <p id="num"></p>
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'Johnny'";
+      let answer3 = 'He is called "Johnny"';
+      document.getElementById("str1").innerHTML =
+        answer1 + "<br/>" + answer2 + "<br/>" + answer3;
+    </script>
 
-        <script>
-            let x4 = 34.00;     // With decimals
-            let x5 = 34;        // Without decimals
-            let x6 = 3.14;
-            document.getElementById("num").innerHTML = x4 + "<br/>" + x5 + "<br/>" + x6;
-        </script>
+    <h3>4th JavaScript Numbers</h3>
+    <p>Numbers can be written with, or without decimals:</p>
+    <p id="num"></p>
 
-        <h4>5th Exponention Notation</h4>
-        <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
-        <p id="exp"></p>
-        <p id="exp1"></p>
+    <script>
+      let x4 = 34.0; // With decimals
+      let x5 = 34; // Without decimals
+      let x6 = 3.14;
+      document.getElementById("num").innerHTML =
+        x4 + "<br/>" + x5 + "<br/>" + x6;
+    </script>
 
-        <script>
-            let large = 123e5;      // 12300000
-            let small = 123e-5;     // 0.00123
-            let extLarge = 10e99
-            document.getElementById("exp").innerHTML =
-            large + "<br/>" + small;
-            document.getElementById("exp1").innerHTML = extLarge;
-        </script>
+    <h4>5th Exponention Notation</h4>
+    <p>
+      Extra large or extra small numbers can be written with scientific
+      (exponential) notation:
+    </p>
+    <p id="exp"></p>
+    <p id="exp1"></p>
 
-        <h3>6th JavaScript Booleans</h3>
-        <h4>Use Case: Equality</h4>
-        <p id="bool"></p>
-        <p id="bool1"></p>
-        <p id="bool2"></p>
-        
-        <script>
-            let bool = 5;
-            document.getElementById("bool").innerHTML = (bool == 5);
-            document.getElementById("bool1").innerHTML = (bool == 8);
-            document.getElementById("bool2").innerHTML = (bool != 8);
-        </script>
+    <script>
+      let large = 123e5; // 12300000
+      let small = 123e-5; // 0.00123
+      let extLarge = 10e99;
+      document.getElementById("exp").innerHTML = large + "<br/>" + small;
+      document.getElementById("exp1").innerHTML = extLarge;
+    </script>
 
-        <h3>7th Datatype Undefined</h3>
-        <p>A Variable without a value has the datatype of:</p>
-        <p id="und"></p>
+    <h3>6th JavaScript Booleans</h3>
+    <h4>Use Case: Equality</h4>
+    <p id="bool"></p>
+    <p id="bool1"></p>
+    <p id="bool2"></p>
 
-        <p>Empty values</p>
-        <p>An empty string has both a legal value and a type:</p>
-        <p id="und1"></p>
+    <script>
+      let bool = 5;
+      document.getElementById("bool").innerHTML = bool == 5;
+      document.getElementById("bool1").innerHTML = bool == 8;
+      document.getElementById("bool2").innerHTML = bool != 8;
+    </script>
 
-        <script>
-            let undefi;
-            document.getElementById("und").innerHTML = typeof undefi;
+    <h3>7th Datatype Undefined</h3>
+    <p>A Variable without a value has the datatype of:</p>
+    <p id="und"></p>
 
-            let empty = "";     // The value is "", the typeof is "string"
-            document.getElementById("und1").innerHTML = "The value is : " + empty + "<br/>" + "The type of is: " + typeof empty
+    <p>Empty values</p>
+    <p>An empty string has both a legal value and a type:</p>
+    <p id="und1"></p>
 
+    <script>
+      let undefi;
+      document.getElementById("und").innerHTML = typeof undefi;
 
-
-
-
-        </script>
-
-
-
-
-
-
-    </body>
+      let empty = ""; // The value is "", the typeof is "string"
+      document.getElementById("und1").innerHTML =
+        "The value is : " + empty + "<br/>" + "The type of is: " + typeof empty;
+    </script>
+  </body>
 </html>

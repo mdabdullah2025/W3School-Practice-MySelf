@@ -1,17 +1,17 @@
 /* ১. কন্টেইনার সেট আপ (Container Setup) */
 #marquee-container {
   width: 100%;
-  overflow: hidden; 
-  padding: 10px 0; 
+  overflow: hidden;
+  padding: 10px 0;
 }
 #marquee-text {
   width: 75%;
-  white-space: nowrap; 
+  white-space: nowrap;
   display: inline-block;
   animation-name: marquee;
-  animation-duration: 30s; 
-  animation-timing-function: linear; 
-  animation-iteration-count: infinite; 
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 @keyframes marquee {
   0% {

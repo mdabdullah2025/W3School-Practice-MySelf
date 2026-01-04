@@ -1,113 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <body style="text-align: center; font-size: 20px">
-        <h3 id="one">Start!</h3>
+  <body style="text-align: center; font-size: 20px">
+    <h3 id="one">Start!</h3>
 
-        <button onclick="updateNumberInc1()">Number Increment ++😎</button>
-        <button onclick="updateNumberDec1()">Number Decrement --🤔</button>
+    <button onclick="updateNumberInc1()">Number Increment ++😎</button>
+    <button onclick="updateNumberDec1()">Number Decrement --🤔</button>
 
-        <h2>2nd Practice</h2>
+    <h2>2nd Practice</h2>
 
-        <h3 id="two">Start Again🥇</h3>
-        <button onclick="updateNumberDec2()">➖➖</button>
-        <button onclick="updateNumberInc2()">➕➕</button>
+    <h3 id="two">Start Again🥇</h3>
+    <button onclick="updateNumberDec2()">➖➖</button>
+    <button onclick="updateNumberInc2()">➕➕</button>
 
-        <h2>3rd Practice😁</h2>
+    <h2>3rd Practice😁</h2>
 
-        <h2 id="three">And Start😒</h2>
-        <button onclick="document.getElementById('three').innerHTML = 'START NOW🎲'">Start Now🎲</button>
-        <button onclick="updateNumberInc3()">➕</button>
-        <button onclick="updateNumberDec3()">➖</button>
+    <h2 id="three">And Start😒</h2>
+    <button
+      onclick="document.getElementById('three').innerHTML = 'START NOW🎲'"
+    >
+      Start Now🎲
+    </button>
+    <button onclick="updateNumberInc3()">➕</button>
+    <button onclick="updateNumberDec3()">➖</button>
 
-        <h2>4th Practice🎯</h2>
-        
-        <h3 id="four">Start🏆</h3>
-        <button onclick="document.getElementById('four').innerHTML = 'START AGAIN😎'">Start Again😎</button>
-        <button onclick="updateNumberInc4()">➕</button>
-        <button>➖</button>
+    <h2>4th Practice🎯</h2>
 
+    <h3 id="four">Start🏆</h3>
+    <button
+      onclick="document.getElementById('four').innerHTML = 'START AGAIN😎'"
+    >
+      Start Again😎
+    </button>
+    <button onclick="updateNumberInc4()">➕</button>
+    <button>➖</button>
 
-        <script>
-            let currentNumber = 0;
-            const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan', 'black', 'white'];
-            // 1st
-            function updateNumberInc1() {
-                //increment 
-                currentNumber ++;
-                document.getElementById('one').innerHTML = currentNumber;
-            }
-            function updateNumberDec1() {
-                //decrement
-                currentNumber --;
-                document.getElementById('one').innerHTML = currentNumber;   
-            }
+    <script>
+      let currentNumber = 0;
+      const COLOR_LIST = [
+        "red",
+        "blue",
+        "yellow",
+        "purple",
+        "cyan",
+        "black",
+        "white",
+      ];
+      // 1st
+      function updateNumberInc1() {
+        //increment
+        currentNumber++;
+        document.getElementById("one").innerHTML = currentNumber;
+      }
+      function updateNumberDec1() {
+        //decrement
+        currentNumber--;
+        document.getElementById("one").innerHTML = currentNumber;
+      }
 
-            // 2nd
-            function updateNumberInc2() {
-                currentNumber ++;
-                document.getElementById('two').innerHTML = currentNumber;
-                // জোড় ও বিজোড় হলে রং পরিবর্তন হবে
-                if (currentNumber % 2 === 0) {
-                    document.getElementById('two').style.color = 'tomato';
-                }
-                else {
-                    document.getElementById('two').style.color = 'green';
-                }
-            }
-            function updateNumberDec2() {
-                currentNumber --;
-                document.getElementById('two').innerHTML = currentNumber;
-                if (currentNumber % 2 === 0) {
-                    document.getElementById('two').style.color = '#aaa69d';
-                }
-                else {
-                    document.getElementById('two').style.color = '#b33939';
-                }
-            }
+      // 2nd
+      function updateNumberInc2() {
+        currentNumber++;
+        document.getElementById("two").innerHTML = currentNumber;
+        // জোড় ও বিজোড় হলে রং পরিবর্তন হবে
+        if (currentNumber % 2 === 0) {
+          document.getElementById("two").style.color = "tomato";
+        } else {
+          document.getElementById("two").style.color = "green";
+        }
+      }
+      function updateNumberDec2() {
+        currentNumber--;
+        document.getElementById("two").innerHTML = currentNumber;
+        if (currentNumber % 2 === 0) {
+          document.getElementById("two").style.color = "#aaa69d";
+        } else {
+          document.getElementById("two").style.color = "#b33939";
+        }
+      }
 
-            // 3rd
-            function updateNumberInc3() {
-                currentNumber ++;
-                // let COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
-                // index num
-                // let nextColorIndex = currentNumber % 7;
-                let nextColorIndex = currentNumber % COLOR_LIST.length;
+      // 3rd
+      function updateNumberInc3() {
+        currentNumber++;
+        // let COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+        // index num
+        // let nextColorIndex = currentNumber % 7;
+        let nextColorIndex = currentNumber % COLOR_LIST.length;
 
-                document.getElementById('three').innerHTML = currentNumber;
+        document.getElementById("three").innerHTML = currentNumber;
 
-                document.getElementById('three').style.color = COLOR_LIST[nextColorIndex];
-            }
-            function updateNumberDec3() {
-                currentNumber --;
-                // let COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
-                // let nextColorIndex = currentNumber % 5;
-                let nextColorIndex = currentNumber % COLOR_LIST.length;
+        document.getElementById("three").style.color =
+          COLOR_LIST[nextColorIndex];
+      }
+      function updateNumberDec3() {
+        currentNumber--;
+        // let COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+        // let nextColorIndex = currentNumber % 5;
+        let nextColorIndex = currentNumber % COLOR_LIST.length;
 
-                document.getElementById('three').innerHTML = currentNumber;
-                document.getElementById('three').style.color = COLOR_LIST[nextColorIndex];
-            }
+        document.getElementById("three").innerHTML = currentNumber;
+        document.getElementById("three").style.color =
+          COLOR_LIST[nextColorIndex];
+      }
 
-            // 4th
-            function updateNumberInc4() {
-                currentNumber ++;
-                let nextColorIndex = currentNumber % COLOR_LIST.length;
+      // 4th
+      function updateNumberInc4() {
+        currentNumber++;
+        let nextColorIndex = currentNumber % COLOR_LIST.length;
 
-                document.getElementById('four').innerHTML = currentNumber;
-                document.getElementById('four').style.color = COLOR_LIST[nextColorIndex];
+        document.getElementById("four").innerHTML = currentNumber;
+        document.getElementById("four").style.color =
+          COLOR_LIST[nextColorIndex];
 
-                // let nextColorIndex = currentNumber % COLOR_LIST.length;
+        // let nextColorIndex = currentNumber % COLOR_LIST.length;
 
-                // document.getElementById('four').innerHTML = currentNumber;
+        // document.getElementById('four').innerHTML = currentNumber;
 
-                // document.getElementById('four').style.color = COLOR_LIST[nextColorIndex];
-                
-            }
-
-        
-
-        </script>
-
-
-
-    </body>
+        // document.getElementById('four').style.color = COLOR_LIST[nextColorIndex];
+      }
+    </script>
+  </body>
 </html>

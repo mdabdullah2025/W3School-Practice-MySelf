@@ -1,54 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-    <title>সাইক্লিক কালার চেঞ্জার (সংশোধিত)</title>
-    
-    <style>
-        /* CSS অংশ: Inheritance লজিক এখানে আর প্রয়োজন নেই, তবে PRE ট্যাগের স্টাইল রাখা হলো */
-        body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-            color: #1a1a1a;
-            padding: 20px;
-        }
-        
-        /* PRE ট্যাগের স্টাইল: কোড ব্লক */
-        #codeColor {
-            background: #f9f9f9;
-            border:1px solid #e5e5e5;
-            padding: 15px;
-            width: 75%;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        
-        #num1 {
-            font-size: 18px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        
-        button {
-            padding: 10px 15px;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-        
-        /* গুরুত্বপূর্ণ: ভেতরের টেক্সট ডিফল্ট রং যাতে না নেয়, তাই এই অতিরিক্ত নিয়মটি রাখা হলো */
-        #codeColor h2 {
-            /* H2 এর মার্জিন বা প্যাডিং ঠিক রাখার জন্য */
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+  <title>সাইক্লিক কালার চেঞ্জার (সংশোধিত)</title>
+
+  <style>
+    /* CSS অংশ: Inheritance লজিক এখানে আর প্রয়োজন নেই, তবে PRE ট্যাগের স্টাইল রাখা হলো */
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #1a1a1a;
+      padding: 20px;
+    }
+
+    /* PRE ট্যাগের স্টাইল: কোড ব্লক */
+    #codeColor {
+      background: #f9f9f9;
+      border: 1px solid #e5e5e5;
+      padding: 15px;
+      width: 75%;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    #num1 {
+      font-size: 18px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* গুরুত্বপূর্ণ: ভেতরের টেক্সট ডিফল্ট রং যাতে না নেয়, তাই এই অতিরিক্ত নিয়মটি রাখা হলো */
+    #codeColor h2 {
+      /* H2 এর মার্জিন বা প্যাডিং ঠিক রাখার জন্য */
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <html>
-<body>
-    
+  <body>
     <button type="button" id="colorChangeUpBtn">
-        ➕➕➕ কালার ও সংখ্যা বৃদ্ধি 🎲🏆
+      ➕➕➕ কালার ও সংখ্যা বৃদ্ধি 🎲🏆
     </button>
-    
-    <button type="button" onclick="document.getElementById('num1').innerHTML = 'নাম পরিবর্তন: abdullah'">🎲নাম পরিবর্তন🏆</button>
-        
+
+    <button
+      type="button"
+      onclick="document.getElementById('num1').innerHTML = 'নাম পরিবর্তন: abdullah'"
+    >
+      🎲নাম পরিবর্তন🏆
+    </button>
+
     <p id="num1">Clicks: 0</p>
 
     <pre id="codeColor"> 	
@@ -67,43 +71,41 @@
     </pre>
 
     <script>
-    // JavaScript অংশ 
-    const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
-    let currentColorIndex = -1;
+      // JavaScript অংশ
+      const COLOR_LIST = ["red", "blue", "yellow", "purple", "cyan"];
+      let currentColorIndex = -1;
 
-    const colorChangeUp = document.getElementById('colorChangeUpBtn');
-    const codeBlock = document.getElementById('codeColor'); // PRE ট্যাগ
-    const num1Element = document.getElementById('num1');    // P ট্যাগ
+      const colorChangeUp = document.getElementById("colorChangeUpBtn");
+      const codeBlock = document.getElementById("codeColor"); // PRE ট্যাগ
+      const num1Element = document.getElementById("num1"); // P ট্যাগ
 
-    /**
-     * বাটনে ক্লিক করার পর সংখ্যা বৃদ্ধি এবং কালার পরিবর্তন করার ফাংশন
-     */
-    function updateChangeUp() {
-        currentColorIndex ++;
+      /**
+       * বাটনে ক্লিক করার পর সংখ্যা বৃদ্ধি এবং কালার পরিবর্তন করার ফাংশন
+       */
+      function updateChangeUp() {
+        currentColorIndex++;
         let nextColorIndex = currentColorIndex % COLOR_LIST.length;
         const nextColor = COLOR_LIST[nextColorIndex];
 
         // 1. PRE ট্যাগের রং পরিবর্তন করা
-        codeBlock.style.color = nextColor; 
-        
+        codeBlock.style.color = nextColor;
+
         // 2. সকল ভেতরের ট্যাগগুলির রং পরিবর্তন করা (গুরুত্বপূর্ণ পরিবর্তন)
         // querySelectorAll('*') ব্যবহার করে PRE ট্যাগের ভেতরের সমস্ত চাইল্ড ট্যাগকে নির্বাচন করা হলো
-        const innerElements = codeBlock.querySelectorAll('*');
-        
-        // foreach লুপ ব্যবহার করে প্রতিটি এলিমেন্টের রং পরিবর্তন করা হলো
-        innerElements.forEach(element => {
-            // এই পদ্ধতিতে ভেতরের সকল ট্যাগকে নিশ্চিতভাবে রং পরিবর্তন করতে বাধ্য করা হয়।
-            element.style.color = nextColor;
-        });
+        const innerElements = codeBlock.querySelectorAll("*");
 
+        // foreach লুপ ব্যবহার করে প্রতিটি এলিমেন্টের রং পরিবর্তন করা হলো
+        innerElements.forEach((element) => {
+          // এই পদ্ধতিতে ভেতরের সকল ট্যাগকে নিশ্চিতভাবে রং পরিবর্তন করতে বাধ্য করা হয়।
+          element.style.color = nextColor;
+        });
 
         // 3. P ট্যাগে সংখ্যা এবং রং সেট করা হলো
         num1Element.innerHTML = "Clicks: " + currentColorIndex;
         num1Element.style.color = nextColor;
-    }
-    
-    colorChangeUp.addEventListener('click', updateChangeUp);
-    </script>
+      }
 
-</body>
+      colorChangeUp.addEventListener("click", updateChangeUp);
+    </script>
+  </body>
 </html>

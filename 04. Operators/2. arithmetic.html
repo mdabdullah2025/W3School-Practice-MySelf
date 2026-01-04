@@ -1,11 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>2 arithmetic</title>
-    </head>
-    <body>
-        <h2>4 Jan 2026 5:25:50 PM</h2>
-        <h3></h3>
-        
-    </body>
+  <head>
+    <title>2 arithmetic</title>
+  </head>
+  <body>
+    <h2>4 Jan 2026 5:25:50 PM</h2>
+    <h3>1st JavaScript Arithmetic</h3>
+    <p>
+      A typical arithmetic operation takes two numbers and produces a new
+      number.
+    </p>
+    <p id="arith"></p>
+
+    <p>
+      A typical aritmetic operation takes two numbers (or variables) and
+      produces a new number.
+    </p>
+    <p id="arith1"></p>
+
+    <p>
+      A typical arithmetic operation takes two numbers (or expressions) and
+      produces a new number.
+    </p>
+    <p id="arith2"></p>
+    <script>
+      let ari = 100 + 50;
+      document.getElementById("arith").innerHTML = ari;
+
+      // varialbes
+      let ari1 = 100;
+      let ari2 = 50;
+      let ari3 = ari1 + ari2;
+      document.getElementById("arith1").innerHTML = ari3;
+
+      // expressions
+      let ari4 = 3;
+      let ari5 = (100 + 50) * ari4;
+      document.getElementById("arith2").innerHTML = ari5;
+    </script>
+
+    <h3>2nd Operators and Operands</h3>
+    <h4>The + Operator</h4>
+    <p id="oper"></p>
+
+    <h4>The - Operator</h4>
+    <p id="oper1"></p>
+
+    <h4>The * Operator</h4>
+    <p id="oper2"></p>
+
+    <h4>The / Operator</h4>
+    <p id="oper3"></p>
+
+    <h4>The % Operator</h4>
+    <p id="oper4"></p>
+
+    <script>
+      let opr = 5;
+      let opr1 = 2;
+      let opr2 = opr + opr1;
+      document.getElementById("oper").innerHTML = opr2;
+
+      let opr3 = 5;
+      let opr4 = 2;
+      let opr5 = opr3 - opr4;
+      document.getElementById("oper1").innerHTML = opr5;
+
+      let opr6 = 5;
+      let opr7 = 2;
+      let opr8 = opr6 * opr7;
+      document.getElementById("oper2").innerHTML = opr8;
+
+      let opr9 = 5;
+      let opr10 = 2;
+      let opr11 = opr / opr10;
+      document.getElementById("oper3").innerHTML = opr11;
+
+      let opr12 = 5;
+      let opr13 = 2;
+      let opr14 = opr12 % opr13;
+      document.getElementById("oper4").innerHTML = opr14;
+    </script>
+
+    <h3>3rd Incrementing++ & Decrementing--</h3>
+    <h4>The ++ Operator</h4>
+    <p id="incr"></p>
+
+    <h4>The -- Operator</h4>
+    <p id="decr"></p>
+
+    <h4>The ** Operator</h4>
+    <p id="expo"></p>
+
+    <h4>Math.pow()</h4>
+    <p id="math"></p>
+
+    <h4>Operator Precedence</h4>
+    <p>Multiplication has precedence over addition.</p>
+    <p id="prec"></p>
+    <p>But parenthesis has precedence over multiplication.</p>
+    <p id="prec1"></p>
+
+    <p>
+      When many operations has the same precedence, they are computed from left
+      to right.
+    </p>
+    <p id="prec2"></p>
+    <p id="prec3"></p>
+
+    <script>
+      let inc = 5;
+      inc++;
+      let inc1 = inc;
+      document.getElementById("incr").innerHTML = inc1;
+
+      let dec = 5;
+      dec--;
+      let dec1 = dec;
+      document.getElementById("decr").innerHTML = dec;
+
+      let exp = 5;
+      document.getElementById("expo").innerHTML = exp ** 2;
+
+      let math = 5;
+      document.getElementById("math").innerHTML = Math.pow(math, 2);
+
+      document.getElementById("prec").innerHTML = 100 + 50 * 3;
+
+      document.getElementById("prec1").innerHTML = (100 + 50) * 3;
+
+      document.getElementById("prec2").innerHTML = 100 + 50 - 3;
+
+      document.getElementById("prec3").innerHTML = (100 / 50) * 3;
+    </script>
+  </body>
 </html>
