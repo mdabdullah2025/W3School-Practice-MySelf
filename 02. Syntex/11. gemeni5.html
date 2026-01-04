@@ -1,0 +1,318 @@
+<!doctype html>
+<head>
+    <title>Update color </title>
+    
+    <style>
+        /* CSS অংশ: Inheritance লজিক এখানে আর প্রয়োজন নেই, তবে PRE ট্যাগের স্টাইল রাখা হলো */
+        body {
+            font-family: 'Inter', -apple-system, 'Segoe UI';
+            color: #1a1a1a;
+            padding: 20px;
+        }
+        /* ✅ ফিক্সড: #codeColor এবং তার ভেতরের সমস্ত ট্যাগ যেন প্যারেন্টের স্টাইল গ্রহণ করে। */
+        #codeColor, 
+        #codeColor *,
+        #codeColor code,
+        #codeColor h2,
+        #codeColor h3,
+ 
+        /* PRE ট্যাগের স্টাইল: কোড ব্লক */
+        #codeColor {
+            background: #f9f9f9;
+            width: 75%;
+            font-size: 14px;
+            line-height: 1.5;
+            transition: all 0.3s ease;
+
+        }
+        
+        #num1 {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+        /* গুরুত্বপূর্ণ: ভেতরের টেক্সট ডিফল্ট রং যাতে না নেয়, তাই এই অতিরিক্ত নিয়মটি রাখা হলো */
+        #codeColor h2 {
+            /* H2 এর মার্জিন বা প্যাডিং ঠিক রাখার জন্য */
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<html>
+<body>
+    
+    <button type="button" id="colorChangeUpBtn">
+        ➕➕➕ কালার ও সংখ্যা বৃদ্ধি 🎲🏆
+    </button>
+
+    <button type="button" id="bgChangeBtn">
+        🖼️ ব্যাকগ্রাউন্ড কালার 🌈
+    </button>
+    <button type="button" id="fontChangeBtn">
+        🆎 ফন্ট পরিবর্তন ✒️
+    </button>
+
+
+    
+    <!-- <button type="button" onclick="document.getElementById('num1').innerHTML = 'নাম পরিবর্তন: abdullah'">🎲নাম পরিবর্তন🏆</button> -->
+        
+    <p id="num1">Clicks: 0</p>
+
+    <pre id="codeColer"> 	
+        <code>
+            <div class="marquee-container">
+                <h2 class="marquee-text">I AM ABDULLAH 😊!</h2>
+            </div>
+            <p>skdfj48574</p>
+            <h1>sdkfj4985</h1>
+            <h2>dkjf94r58</h2>
+            
+            
+            // নিচে কিছু উদাহরণ কোড/টেক্সট
+            const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+            let index = 0; 
+            if (index < COLOR_LIST.length) {
+                console.log("Color is changing...");
+            }
+
+
+            <h3>1st Single Line Comments start with (//)</h3>
+
+            <\h2 id="myH"></>
+            <\p id="myP"></>
+
+            <\p id="comm1"></>
+
+            <\script>
+                // Change heading:
+                document.getElementById("myH").innerHTML = "JavaScript Comments";
+                // Change pragraph:
+                document.getElementById("myP").innerHTML = "My First Pragraph.";
+                let x = 5;  //Declare x, give it the value of 5;
+                let y = x + 2;  //Declare y, give it the value of x + 2
+                // Write y to comm1:
+                document.getElementById("comm1").innerHTML = y;
+            <\/script>
+
+            <h3>2nd Multi-Line Comments start with /* */</h3>
+
+            <\h2 id="comm2"></>
+            <\p id="comm3"></>
+
+            <\script>
+                /*
+                The code belew with change the heading with id="comm2" and the paragraph with id="comm3"
+                */
+               document.getElementById("comm2").innerHTML = "JavaScript Multi-line Comments with /**/";
+               document.getElementById("comm3").innerHTML = "My First Paragraph.";
+            <\/script>
+
+            <h3>3rd Using Comments to Prevent Execution</h3>
+
+            <\h2 id="comm4"></>
+            <\p id="comm5"></>
+
+            <p>Others</p>
+
+            <\h2 id="comm6"></>
+            <\p id="comm7"></>
+
+            <\script>
+                /*
+                *! Code Comments
+                */
+                //document.getElementById("comm4").innerHTML = "My First Page";
+                document.getElementById("comm5").innerHTML = "My First Paragraph";
+
+                /* document.getElementById("comm6").innerHTML = "Welcome to my HomePage";
+                document.getElementById("comm7").innerHTML = "This is my first paragraph";
+                */
+               document.getElementById("comm7").innerHTML = "The comment-block is not executed";
+            <\/script>
+
+            <p>The line starting with // is not executed.</p>
+        </code>
+    </pre>
+
+    <script>
+    // JavaScript অংশ 
+    const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan',
+    "#1d4ed8", // blue
+    "#2563eb",
+    "#0ea5e9", // sky
+    "#0284c7",
+
+    "#047857", // green
+    "#059669",
+    "#16a34a",
+
+    "#0f766e", // teal
+    "#14b8a6",
+
+    "#7c3aed", // purple
+    "#6d28d9",
+    "#8b5cf6",
+
+    "#9333ea", // violet
+    "#a855f7",
+
+    "#be123c", // rose
+    "#e11d48",
+
+    "#c2410c", // orange
+    "#ea580c",
+    "#f97316",
+
+    "#92400e", // amber
+    "#b45309",
+
+    "#475569", // slate
+    "#334155",
+
+    "#1e293b", // blue-gray
+    "#0f172a",
+
+    "#0369a1", // deep blue
+    "#075985",
+
+    "#065f46", // deep green
+    "#064e3b",
+
+    "#581c87", // deep purple
+    "#4c1d95",
+
+    "#7f1d1d", // deep red
+    "#991b1b"
+    ];
+
+    const BG_COLOR_LIST = [
+  "#ffffff",
+  "#f9f9f9",
+  "#f8fafc",
+  "#f2f2f2",
+  "#fafafa",
+  "#f5f5f5",
+
+  "#f1f5f9", // blue tint
+  "#eef2ff",
+  "#f0f9ff",
+
+  "#f0fdf4", // green tint
+  "#ecfdf5",
+
+  "#f0fdfa", // teal tint
+  "#ecfeff",
+
+  "#faf5ff", // purple tint
+  "#f5f3ff",
+
+  "#fff1f2", // rose tint
+  "#fef2f2",
+
+  "#fff7ed", // orange tint
+  "#fffbeb",
+
+  "#f8fafc",
+  "#f9fafb",
+  "#fdfdfd"
+    ];
+
+    // ৩. ফন্ট পরিবর্তনের জন্য অ্যারে 
+    const FONT_LIST = [
+        'Arial', 
+        'Courier New, monospace', 
+        'Georgia, serif', 
+        'cursive',
+
+        'Inter',              // Modern UI (Best overall)
+        'Roboto',             // Clean & readable
+        'Poppins',            // Rounded & friendly
+        'Montserrat',         // Elegant & professional
+        'Open Sans',           // Neutral & safe
+
+        'Lato',                // Smooth & balanced
+        'Nunito',              // Soft & human
+        "Source Sans 3",       // Editorial / content
+        "Work Sans",           // Minimal & modern
+        "DM Sans",              // Trendy UI font
+    ];
+
+
+
+    let currentColorIndex = -1;
+    let currentBgIndex = -1;
+    let currentFontIndex = -1;
+
+    const colorChangeUp = document.getElementById('colorChangeUpBtn');
+    const bgChangeBtn = document.getElementById('bgChangeBtn');
+    const fontChangeBtn = document.getElementById('fontChangeBtn');
+
+
+    const codeBlock = document.getElementById('codeColor'); // PRE ট্যাগ
+    const num1Element = document.getElementById('num1');    // P ট্যাগ
+
+    /**
+     * বাটনে ক্লিক করার পর সংখ্যা বৃদ্ধি এবং কালার পরিবর্তন করার ফাংশন
+     */
+    function updateTextColor() {
+        currentColorIndex ++;
+        let nextColorIndex = currentColorIndex % COLOR_LIST.length;
+        const nextColor = COLOR_LIST[nextColorIndex];
+
+        // 1. PRE ট্যাগের রং পরিবর্তন করা
+        codeBlock.style.color = nextColor; 
+        
+        // 2. সকল ভেতরের ট্যাগগুলির রং পরিবর্তন করা (গুরুত্বপূর্ণ পরিবর্তন)
+        // querySelectorAll('*') ব্যবহার করে PRE ট্যাগের ভেতরের সমস্ত চাইল্ড ট্যাগকে নির্বাচন করা হলো
+        const innerElements = codeBlock.querySelectorAll('*');
+        
+        // foreach লুপ ব্যবহার করে প্রতিটি এলিমেন্টের রং পরিবর্তন করা হলো
+        innerElements.forEach(element => {
+            // এই পদ্ধতিতে ভেতরের সকল ট্যাগকে নিশ্চিতভাবে রং পরিবর্তন করতে বাধ্য করা হয়।
+            element.style.color = nextColor;
+        });
+
+
+        // 3. P ট্যাগে সংখ্যা এবং রং সেট করা হলো
+        // num1Element.innerHTML = "Clicks: " + currentColorIndex;
+        // num1Element.style.color = nextColor;
+    }
+    // **********************************************
+    // ২. ব্যাকগ্রাউন্ড কালার পরিবর্তনের ফাংশন
+    // **********************************************
+    function updateBgChange() {
+        currentBgIndex++;
+        let nextBgIndex = currentBgIndex % BG_COLOR_LIST.length;
+        const nextBgColor = BG_COLOR_LIST[nextBgIndex];
+        
+        codeBlock.style.backgroundColor = nextBgColor;
+    }
+    // **********************************************
+    // ৩. ফন্ট পরিবর্তনের ফাংশন
+    // **********************************************
+    function updateFontChange() {
+        currentFontIndex++;
+        let nextFontIndex = currentFontIndex % FONT_LIST.length;
+        const nextFont = FONT_LIST[nextFontIndex];
+        
+        // CSS Inheritance এর কারণে ভেতরের সব ফন্ট পরিবর্তন হবে।
+        num1Element.style.fontFamily = nextFont;
+        codeBlock.style.fontFamily = nextFont;
+    }
+    
+    colorChangeUp.addEventListener('click', updateTextColor);
+
+    bgChangeBtn.addEventListener('click', updateBgChange);
+    fontChangeBtn.addEventListener('click', updateFontChange);
+    </script>
+
+</body>
+</html>

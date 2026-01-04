@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <title>3 const</title>
+    </head>
+    <body>
+        <h2>02 Jan 2026 8:16:30 PM</h2>
+        <h3>1st JavaScript Const</h3>
+        <p id="demo"></p>        
+        <script>
+            try {
+                const PI = 3.141592653589793;
+                PI = 3.14;
+            }
+            catch (err) {
+                document.getElementById("demo").innerHTML = err;
+            }
+        </script>
+
+        <h3>2nd Constant Arrays</h3>
+        <p>Declaring a constant arry does NOT make the elements unchangeagle:</p>
+        <p id="arr"></p>
+
+        <p>You cna NOT reassign a constant array:</p>
+        <p id="arr1"></p>
+
+        <script>
+            // Create an Array:
+            const cars = ["Saab", "Volvo", "BMW"];
+            // Change an Elemant:
+            cars[0] = "Toyota";
+            // Add an Element:
+            cars.push("Audi");
+
+            // Display the Array:
+            document.getElementById("arr").innerHTML = cars;
+
+            try {
+                const cars1 = ["Saab", "Volvo" ,"BMW"];
+                cars = ["Toyota", "Volvo", "Audi"];
+            }
+            catch (err1) {
+                document.getElementById("arr1").innerHTML = err1;
+            }
+        </script>
+
+        <h3>3rd Constant Objects</h3>
+        <p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+        <p id="obj"></p>
+
+        <p>You can NOT reassign a constant object:</p>
+        <p id="obj1"></p>
+
+        <script>
+            // Create an Object:
+            const car = {type:"Fiat", model:"500", color:"white"};
+            // Change a property:
+            car.color = "red";
+            // Add a property:
+            car.owner = "Johnson";
+            // Display the property:
+            document.getElementById("obj").innerHTML = "Car owner is " + car.owner;
+
+            try {
+                const car1 = {type:"Fiat", model:"500", color:"white"};
+                car1 = {type:"Volvo", model:"500", color:"red"};
+            }
+            catch (err2) {
+                document.getElementById("obj1").innerHTML  = err2;
+            }
+        </script>
+
+        <h3>4th Block Scope</h3>
+        <h4>JavaScript canst variables has block scope</h4>
+        <p id="blo"></p>
+
+        <script>
+            const x = 10;
+            // Here x is 10
+            {
+                const x = 2;
+                // Here x is 2;
+            }
+
+            // Here x is 10
+            document.getElementById("blo").innerHTML = "x is " + x;
+        </script>
+
+        <h3>5th Hoisting</h3>
+        <p>With <b>var</b>, you use a variable before it is declared:</p>
+        <p id="hos"></p>
+
+        <p>With <b>const</b>, you use a variable before it is declared:</p>
+        <p id="hos1"></p>
+        <p id="hos2"></p>
+
+        <script>
+            carName = "Volvo";
+            document.getElementById("hos").innerHTML = carName;
+            var carName;
+
+            try {
+            alert(carName1);
+            const carName1 = "Volvo";
+            }
+            catch (err3) {
+                document.getElementById("hos1").innerHTML = err3;
+            }
+
+        </script>
+
+        
+    </body>
+</html>

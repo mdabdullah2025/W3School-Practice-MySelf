@@ -1,0 +1,99 @@
+<!doctype html>
+<head>
+    <title>কালার চেঞ্জার</title>
+    <link rel="stylesheet" href="5.1 style.css">
+    <style>
+        /* উপরে দেখানো CSS স্টাইল এখানে থাকবে */
+        body { /* ... */ }
+        #codeColor, #codeColor *, #codeColor code, #codeColor h2 {
+            color: inherit !important; 
+        }
+        #codeColor { /* ... */ }
+        /* ... বাকি স্টাইল */
+
+        <style>
+    body {
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        color: #1a1a1a;
+    }
+    
+    /* শুধুমাত্র pre ট্যাগের ভেতরের সব এলিমেন্টকে প্যারেন্টের রং উত্তরাধিকারসূত্রে নিতে বলা হলো */
+    #codeColor, 
+    #codeColor *,
+    #codeColor code,
+    #codeColor h2 {
+        /* Inherit: এই প্রপার্টি নিশ্চিত করে যে, ভেতরের ট্যাগগুলো তাদের প্যারেন্ট (#codeColor) 
+        এলিমেন্টের 'color' প্রপার্টির মান ব্যবহার করবে। 
+        */
+        color: inherit !important; 
+    }
+    
+    /* কোড দেখানোর জন্য PRE ট্যাগের স্টাইল */
+    #codeColor {
+        background: #f9f9f9;
+        border:1px solid #e5e5e5;
+        padding: 5px;
+        width: 75%;
+        font-size: 13px;
+    }
+    
+    #mySelf {
+        direction: left;
+    }
+</style>
+
+
+    </style>
+</head>
+<html>
+<body>
+    
+    <button type="button" id="colorChangeUpBtn">
+        ➕➕➕ 🎲🏆
+    </button>
+    
+    <button type="button" onclick="document.getElementById('num1').innerHTML = 'abdullah'">🎲Number Change🏆</button>
+        
+    <p id="num1"></p>
+
+    <pre id="codeColor"> 	
+        <code>
+            <div class="marquee-container">
+                <h2 class="marquee-text">I AM ABDULLAH 😊!</h2>
+            </div>
+            
+            // নিচের এই লেখাটিও রং পরিবর্তন করবে
+            const list = [1, 2, 3];
+            function test() {
+                return "All text inside PRE tag changes color";
+            }
+        </code>
+    </pre>
+
+    <script>
+    const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+    let currentColorIndex = -1;
+
+    const colorChangeUp = document.getElementById('colorChangeUpBtn');
+    
+    // টার্গেট এখন পুরো PRE ট্যাগ
+    const targetElement = document.getElementById('codeColor'); 
+    
+    const num1Element = document.getElementById('num1');
+
+    function updateChangeUp() {
+        currentColorIndex ++;
+        let nextColorIndex = currentColorIndex % COLOR_LIST.length;
+        const nextColor = COLOR_LIST[nextColorIndex];
+
+        // 🎯 PRE ট্যাগের রং পরিবর্তন করা হলো। CSS inheritance-এর কারণে ভেতরের সবকিছুর রং পরিবর্তন হবে।
+        targetElement.style.color = nextColor; 
+
+        num1Element.innerHTML = "Clicks: " + currentColorIndex;
+        num1Element.style.color = nextColor;
+    }
+    
+    colorChangeUp.addEventListener('click', updateChangeUp);
+    </script>
+</body>
+</html>

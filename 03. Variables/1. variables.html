@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>1 Variables</title>
+    </head>
+    <body>
+        <h2>02 Jan 2026 6:03:20 PM</h2>
+        <h3>1st JavaScript Variables</h3>
+
+        <p>In this example, x, y, and z are variables.</p>
+        <p>Example with: let</p>
+        <p id="demo"></p>
+        <p>Example with: const</p>
+        <p id="demo1"></p>
+
+
+        <script>
+            let x = 5;
+            let y = 6;
+            let z = x + y;
+
+            document.getElementById("demo").innerHTML = "The value of z is " + z;
+        </script>
+        <script>
+            const x1 = 10;
+            const y1 = 20;
+            const z1 = x1 + y1;
+
+            document.getElementById("demo1").innerHTML = "The value of z is " + z1;
+        </script>
+    
+        <h3>2nd JavaScript Identifiers</h3>
+        <p>The underscore is treated as a letter in JavaScript names.
+        <p id="ide"></p>
+        <p>JavaScript Dollar Sign $</p>
+        <p id="ide1"></p>
+
+        <script>
+            let _x = 2;
+            let _100 = 5;
+            document.getElementById("ide").innerHTML = _x + _100;
+
+            let $$$ = 20;
+            let $myMoney = 50;
+            document.getElementById("ide1").innerHTML = $$$ + $myMoney;
+        </script>
+        
+        <h3> 3rd Declaring JavaScript Variables</h3>
+        <p>Create a variable, assign a value to it, and display it:</p>
+        <p>Declaring a Variable Using let:</p>
+        <p id="dec"></p>
+        
+        <P>Declaring a Variable Using const:</P>
+        <p id="dec1"></p>
+
+        <p>Not Recommended</p>
+        <p id="dec2"></p>
+
+        <script>
+            let carName = "Volvo";
+            document.getElementById("dec").innerHTML = carName;
+
+            const price1 = 5;
+            const price2 = 6;
+            let total  = price1 + price2;
+            document.getElementById("dec1").innerHTML  = "The total is: " + total;
+
+            x = 500;
+            y = 600;
+            z = x + y;
+            document.getElementById("dec2").innerHTML = "The value of z is: " + z;
+        </script>
+
+        <h3>4th JavaScrpt Data Types</h3>
+        <p>Strings are written with quotes.</p>
+        <p>Numbers are written without quotes.</p>
+        <p id="data"></p>
+        <p>One Statement, Many variab les</p>
+        <p id="data1"></p>
+        <p>You can declare many variables in one statement.</p>
+        <p id="data2"></p>
+
+
+        <script>
+            const pi = 3.14;
+            let person = "Jo hn Doe";
+            let answer = 'Yes I am!';
+            document.getElementById("data").innerHTML = pi + "<br>" + person + "<br>" +answer;
+
+            let person1 = "John Doe", carName1 = "Volvo", Price1 = 200;
+            document.getElementById("data1").innerHTML = person1;
+            document.getElementById("data1").innerHTML = carName1;
+
+            let person2 = "John Doe",
+            carName2 = "Volvo",
+            price3 = 300;
+            document.getElementById("data2").innerHTML = carName2;
+        </script>
+
+        <h3>5th The Assignment Operator</h3>
+        <p>JavaScript Arithmetic</p>
+        <p>The result of adding 5 + 2  + 3 is:</p>
+        <p id="ass"></p>
+        <p id="ass1"></p>
+        <p>The result of adding "5" + 2 + 3 is:</p>
+        <p id="ass2"></p>
+        <p id="ass3"></p>
+
+
+        <script>
+            let xx = 5 + 2 + 3;
+            document.getElementById("ass").innerHTML = xx;
+
+            let xx1 = "John" + " " + "Doe";
+            document.getElementById("ass1").innerHTML = xx1;
+
+            let xx2 = "5" + 2 + 3;
+            document.getElementById("ass2").innerHTML = xx2;
+
+            let xx3 = 2 + 3 + "5";
+            document.getElementById("ass3").innerHTML = xx3;
+        </script>
+
+
+
+
+    </body>
+</html>

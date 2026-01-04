@@ -1,0 +1,254 @@
+<!doctype html>
+<head>
+    <title>2. statements</title>
+        <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',sans-serif;
+            color: #1a1a1a;
+        }
+        pre {
+            background: #f9f9f9;
+            border:1px solid #e5e5e5;
+            padding: 5px;
+            line-height: 12px;
+            width: 75%;
+            font-size: 13px;
+            /* display: block; */
+            /* margin: 0px 1%; */
+            /* font-family: 'Inter',
+            system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
+        }
+    </style>
+</head>
+<html>
+    <body>
+        <h2>31Dec2025 12:48:56 PM</h2>
+        <h3>1st JavaScript Statements</h3>
+        <p>A JavsScript <b>program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+        <p id="staOne"></p>
+        <p id="staTwo"></p>
+        <p>In HTML, JavaScript statements are executed by the browser.</p>
+        <p id="staThree"></p>
+        <P id="staFour"></P>
+
+        <script>
+            let x, y, z ; // Statement 1
+            x = 5; // Statement 2
+            y = 6; // Statement 3
+            z = x + y; // Statement 4
+            a = 10;
+            b = 20;
+            c = a * b;
+
+            document.getElementById("staOne").innerHTML = "The value of z is " + z;
+            document.getElementById("staTwo").innerHTML = "The value of c is " + c;
+            document.getElementById("staThree").innerHTML = "Hello Dolly";
+            document.getElementById("staFour").innerHTML = "Hello Abdullah";
+        </script>
+
+        <h3>Semicolons (;)</h3>
+        <p>Multiple statements on one line are allowed.</p>
+        <p id="staFive"></p>
+        <p id="staSix"></p>
+
+        <script>
+            let a, b, c;
+            a = 5; b = 6; s = a + b; u = a * b;
+            document.getElementById("staFive").innerHTML = s;
+            document.getElementById("staSix").innerHTML = "The Multiple is " + u;
+        </script>
+        
+        <h3>2nd JavaScript White Space and Line Lenght and Line Breaks</h3>
+        <p>The best place to break a code line is after an operator or a comma.</p>
+        <p>For best readability, programmers oftern like to avoid code lines longer then <b>80 characters.</b></p>
+        
+        <p id="breakOne"></p>
+        <p id="breakTwo"></p>
+
+        <script>
+            document.getElementById("breakOne").innerHTML =
+            "Hello Dolly!";
+            document.getElementById("breakTwo").innerHTML =
+            "Hello Abdullah"; 
+        </script>
+
+        <h3>3rd JavaScript Code Blocks</h3>
+
+        <p>JavaScript code blocks are written between { and }</p>
+        
+        <p id="blockOne"></p>
+        <p id="blockTwo"></p>
+        <button type="button" onclick="myFunction()">Click Me!</button>
+
+        <button onclick="myFunction1()">Click Here!</button>
+        <p id="blockThree"></p>
+        <p id="blockFour"></p>
+
+        <button onclick="myFunction2()">Send me</button>
+        <p id="blockSix"></p>
+        <p id="blockSeven"></p>
+
+        <button onclick="myFunction3()">Place Click!</button>
+        <p id="blockEight"></p>
+        <p id="blockNine"></p>
+
+        <button onclick="myFunction4()">Request Me!</button>
+        <p id="blockTen"></p>
+        <p id="blockEleven"></p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("blockOne").innerHTML = "Hello Dolly!";
+                document.getElementById("blockTwo").innerHTML = "Hello Abdullah";
+            }
+
+            function myFunction1() {
+                document.getElementById("blockThree").innerHTML = "Hello Nur Mohammad";
+                document.getElementById("blockFour").innerHTML = "Hello Asmul Husna";
+            }
+            function myFunction2() {
+                document.getElementById("blockSix").innerHTML = "Hello Bangladesh";
+                document.getElementById("blockSeven").innerHTML = "Hello My Mother Contry";
+            }
+
+            function myFunction3() {
+                document.getElementById("blockEight").innerHTML = "Hello Dhake";
+                document.getElementById("blockNine").innerHTML = "Hello Cox's Bazar";
+            }
+            function myFunction4() {
+                document.getElementById("blockTen").innerHTML = "Hello My Village";
+                document.getElementById("blockEleven").innerHTML = "Hello My Brother";
+            }
+
+        </script>
+
+        <pre>
+            <code>
+        <!-- <button type="button" onclick="myFunction()">Click Me!</=button> -->
+
+<=!doctype html>
+<=head>
+    <=title>2. statements</=title>
+<=/head>
+<=html>
+    <=body>
+        <h2>31Dec2025 12:48:56 PM</h2>
+        <h3>1st JavaScript Statements</h3>
+        <p>A JavsScript <b>program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+        <=p id="staOne"></=p>
+        <=p id="staTwo"></=p>
+        <p>In HTML, JavaScript statements are executed by the browser.</p>
+        <=p id="staThree"></=p>
+        <=P id="staFour"></=P>
+
+        <=script>
+            let x, y, z ; // Statement 1
+            x = 5; // Statement 2
+            y = 6; // Statement 3
+            z = x + y; // Statement 4
+            a = 10;
+            b = 20;
+            c = a * b;
+
+            document.getElementById("staOne").innerHTML = "The value of z is " + z;
+            document.getElementById("staTwo").innerHTML = "The value of c is " + c;
+            document.getElementById("staThree").innerHTML = "Hello Dolly";
+            document.getElementById("staFour").innerHTML = "Hello Abdullah";
+        <=/script>
+
+        <h3>Semicolons (;)</h3>
+        <p>Multiple statements on one line are allowed.</p>
+        <=p id="staFive"></=p>
+        <=p id="staSix"></=p>
+
+        <=script>
+            let a, b, c;
+            a = 5; b = 6; s = a + b; u = a * b;
+            document.getElementById("staFive").innerHTML = s;
+            document.getElementById("staSix").innerHTML = "The Multiple is " + u;
+        <=/script>
+        
+        <h3>2nd JavaScript White Space and Line Lenght and Line Breaks</h3>
+        <p>The best place to break a code line is after an operator or a comma.</p>
+        <p>For best readability, programmers oftern like to avoid code lines longer then <b>80 characters.</b></p>
+        
+        <=p id="breakOne"></=p>
+        <=p id="breakTwo"></=p>
+
+        <=script>
+            document.getElementById("breakOne").innerHTML =
+            "Hello Dolly!";
+            document.getElementById("breakTwo").innerHTML =
+            "Hello Abdullah"; 
+        <=/script>
+
+        <h3>3rd JavaScript Code Blocks</h3>
+
+        <p>JavaScript code blocks are written between { and }</p>
+        
+        <=p id="blockOne"></=p>
+        <=p id="blockTwo"></=p>
+        <!-- <button type="button" onclick="myFunction()">Click Me!</=button> -->
+
+        <=button onclick="myFunction1()">Click Here!</=button>
+        <=p id="blockThree"></=p>
+        <=p id="blockFour"></=p>
+
+        <=button onclick="myFunction2()">Send me</=button>
+        <=p id="blockSix"></=p>
+        <=p id="blockSeven"></=p>
+
+        <=button onclick="myFunction3()">Place Click!</=button>
+        <=p id="blockEight"></=p>
+        <=p id="blockNine"></=p>
+
+        <=button onclick="myFunction4()">Request Me!</=button>
+        <=p id="blockTen"></=p>
+        <=p id="blockEleven"></=p>
+
+        <=script>
+            function myFunction() {
+                document.getElementById("blockOne").innerHTML = "Hello Dolly!";
+                document.getElementById("blockTwo").innerHTML = "Hello Abdullah";
+            }
+
+            function myFunction1() {
+                document.getElementById("blockThree").innerHTML = "Hello Nur Mohammad";
+                document.getElementById("blockFour").innerHTML = "Hello Asmul Husna";
+            }
+            function myFunction2() {
+                document.getElementById("blockSix").innerHTML = "Hello Bangladesh";
+                document.getElementById("blockSeven").innerHTML = "Hello My Mother Contry";
+            }
+
+            function myFunction3() {
+                document.getElementById("blockEight").innerHTML = "Hello Dhake";
+                document.getElementById("blockNine").innerHTML = "Hello Cox's Bazar";
+            }
+            function myFunction4() {
+                document.getElementById("blockTen").innerHTML = "Hello My Village";
+                document.getElementById("blockEleven").innerHTML = "Hello My Brother";
+            }
+
+        <=/script>
+    <=/body>
+<=/html>
+            </code>
+        </pre>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <body style="text-align: center; font-size: 20px">
+    
+    <p style="font-size: 60px; font-weight: bold" id="num1">ONE</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('num1').innerHTML = 'Start'">🎲Number Change🏆</button>
+    <br /><br />
+
+    <!-- <button type="button" onclick="upateNumberDec()">
+      Number Decrement -- 🏆🎲
+    </button>
+
+    <button type="button" onclick="updateNumberInc()">
+      Number Increment ++ 🎲🏆
+    </button> -->
+    
+    <button type="button" id="incrementBtn">
+      Number Increment ++ 🎲🏆
+    </button>
+    
+    <button type="button" id="decrementBtn">
+      Number Decrement -- 🏆🎲
+    </button>
+
+    <button type="button" onclick="document.write('ক্লিক করে ভুল কর নি, এখনই সাবধান☠️☠️☠️')">Place Click</button>
+
+    <script>
+      setTimeout(() => {
+        document.write('কি হলো...');
+      }, 5000)
+    </script>
+
+
+
+
+    <script>
+      let currentNumber = 0;
+
+      const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+      let incrementButton = document.getElementById('incrementBtn');
+      let decrementButton = document.getElementById('decrementBtn');
+
+      // Number Increment ++
+      function updateNumberInc() {
+        currentNumber ++;
+        let nextColorIndex = currentNumber % COLOR_LIST.length;
+
+        document.getElementById('num1').innerHTML = currentNumber;
+
+        document.getElementById('num1').style.color = COLOR_LIST[nextColorIndex];
+        // এখন `incrementButton` ভ্যারিয়েবলে আমাদের HTML বাটনটি সংরক্ষিত আছে।
+        
+
+
+        // let nextColorIndex = currentNumber % COLOR_LIST.length;
+        // document.getElementById('num1').innerHTML = currentNumber;
+        // document.getElementById('num1').style.color = COLOR_LIST[nextColorIndex];
+      }
+      incrementButton.addEventListener('click', updateNumberInc);
+        // আমরা বাটনটিকে বলছি, "কেউ ক্লিক করলে updateNumberInc ফাংশনটি চালাও।"
+
+
+      
+      function upateNumberDec() {
+        if (currentNumber > 0) {
+        currentNumber --;
+        const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+        let nextColorIndex = currentNumber % COLOR_LIST.length;
+        document.getElementById('num1').innerHTML = currentNumber;
+        document.getElementById('num1').style.color = COLOR_LIST[nextColorIndex];
+        }
+      }
+      decrementButton.addEventListener('click', upateNumberDec);
+        // আমরা বাটনটিকে বলছি, "কেউ ক্লিক করলে updateNumberInc ফাংশনটি চালাও।"
+
+
+
+
+
+    //   // Number Increment ++
+    //   function updateNumberInc() {
+    //       currentNumber--;
+    //       document.getElementById("num1").innerHTML = currentNumber;
+    //       // Color change when even/odd number
+    //       if (currentNumber % 2 === 0) {
+    //         document.getElementById("num1").style.color = "yellow";
+    //       } else {
+    //         document.getElementById("num1").style.color = "tomato";
+    //       }
+    //   }
+
+    //   // Number Decrement --
+    //   function updateNumberDec() {
+    //     if (currentNumber > 0) {
+    //       currentNumber--;
+    //       document.getElementById("num1").innerHTML = currentNumber;
+    //       // Color change when even/odd number
+    //       if (currentNumber % 2 === 0) {
+    //         document.getElementById("num1").style.color = "yellow";
+    //       } else {
+    //         document.getElementById("num1").style.color = "tomato";
+    //       }
+    //     }
+    //   }
+    </script>
+  </body>
+</html>

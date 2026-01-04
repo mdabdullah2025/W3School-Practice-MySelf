@@ -1,0 +1,220 @@
+<!doctype html>
+<head>
+    <title>3. comments</title>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',sans-serif;
+            color: #1a1a1a;
+        }
+        pre {
+            background: #f9f9f9;
+            border:1px solid #e5e5e5;
+            padding: 5px;
+            line-height: 12px;
+            width: 75%;
+            font-size: 13px;
+            /* display: block; */
+            /* margin: 0px 1%; */
+            /* font-family: 'Inter',
+            system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
+        }
+    </style>
+</head>
+<html>
+    <body>
+        <h3>1st Single Line Comments start with (//)</h3>
+
+        <h2 id="myH"></h2>
+        <p id="myP"></p>
+
+        <p id="comm1"></p>
+
+        <script>
+            // Change heading:
+
+            document.getElementById("myH").innerHTML = "JavaScript Comments";
+
+            // Change pragraph:
+            document.getElementById("myP").innerHTML = "My First Pragraph.";
+
+            let x = 5;  //Declare x, give it the value of 5;
+            let y = x + 2;  //Declare y, give it the value of x + 2
+
+            // Write y to comm1:
+            document.getElementById("comm1").innerHTML = y;
+        </script>
+
+        <h3>2nd Multi-Line Comments start with /* */</h3>
+
+        <h2 id="comm2"></h2>
+        <p id="comm3"></p>
+
+        <script>
+            /*
+            The code belew with change the heading with id="comm2" and the paragraph with id="comm3"
+            */
+           document.getElementById("comm2").innerHTML = "JavaScript Multi-line Comments with /**/";
+           document.getElementById("comm3").innerHTML = "My First Paragraph.";
+        </script>
+
+        <h3>3rd Using Comments to Prevent Execution</h3>
+
+        <h2 id="comm4"></h2>
+        <p id="comm5"></p>
+
+        <p>Others</p>
+
+        <h2 id="comm6"></h2>
+        <p id="comm7"></p>
+
+        <script>
+            /*
+            *! Code Comments
+            */
+            //document.getElementById("comm4").innerHTML = "My First Page";
+            document.getElementById("comm5").innerHTML = "My First Paragraph";
+
+           /* document.getElementById("comm6").innerHTML = "Welcome to my HomePage";
+            document.getElementById("comm7").innerHTML = "This is my first paragraph";
+            */
+           document.getElementById("comm7").innerHTML = "The comment-block is not executed";
+
+        </script>
+
+        <p>The line starting with // is not executed.</p>
+
+        <button type="button" onclick="preFunction()">Code Here☠️</button>
+        <script>
+            function preFunction() {
+                document.getElementById("pre").style.color = "red";
+            }
+        </script>
+
+
+                <div class="marquee-container">
+        <h2 class="marquee-text">I AM ABDULLAH 😊!</h2>
+        </div>
+
+        <marquee width="60%" direction="left" height="100px">
+        This is a sample scrolling text that has scrolls texts to the left.
+        </marquee>
+
+        <!-- <button type="button" id="incrementBtn" onclick="changeColorUp()">
+        ➕➕ 🏆🎲
+        </button> -->
+
+        <h1 id="codeColor">start</h1><button type="button" onclick="document.getElementById('num1').innerHTML = 'abdullah'">🎲Number Change🏆</button>
+        <br/><br/>
+
+        <button type="button" id="colorChangeUpBtn">
+        Number Increment ++ 🎲🏆
+        </button>
+
+
+        <script>
+        let currentColor = 0;
+
+        const COLOR_LIST = ['red', 'blue', 'yellow', 'purple', 'cyan'];
+        let colorChangeUp = document.getElementById('colorChangeUpBtn');
+
+        function updateChangeUp() {
+            // let currentColor = [0|1|2|3|4|5];
+            // let currentColor = "(01234)";
+            currentColor ++;
+            let nextColorIndex = currentColor % COLOR_LIST.length;
+
+            document.getElementById('num1').innerHTML = currentColor;
+
+            document.getElementById('num1').style.color = COLOR_LIST[nextColorIndex];
+            // এখন `colorChangeUp` ভ্যারিয়েবলে আমাদের HTML বাটনটি সংরক্ষিত আছে।
+            
+        }
+        colorChangeUp.addEventListener('click', updateChangeUp);
+            // আমরা বাটনটিকে বলছি, "কেউ ক্লিক করলে ফাংশনটি চালাও।"
+
+        </script>
+
+
+        <!-- ! এখানে সকল কোড গুলো কোড আকারে দেখার জন্য JavaScript দ্বারা Interactive-->
+        <button type="button" onclick="updateChangeUp()">🎯Code Color Change☠️</button>
+        
+        <script>
+            function preFunction() {
+                document.getElementById("pre").style.color = "red";
+            }
+        </script>
+        
+        <!-- ! এখানে সকল কোড গুলো কোড আকারে দেখার জন্য pre tag ব্যবহার করা হয়েছে-->
+        <pre id="num1">  
+            <code>
+
+                <div id="marquee-container">
+                    <h2 id="marquee-text">I AM ABDULLAH 😊!</h2>
+                </div>
+                <h3>1st Single Line Comments start with (//)</h3>
+
+        <=h2 id="myH"></h2>
+        <=p id="myP"></=p>
+
+        <=p id="comm1"></=p>
+
+        <=script>
+            // Change heading:
+
+            document.getElementById("myH").innerHTML = "JavaScript Comments";
+
+            // Change pragraph:
+            document.getElementById("myP").innerHTML = "My First Pragraph.";
+
+            let x = 5;  //Declare x, give it the value of 5;
+            let y = x + 2;  //Declare y, give it the value of x + 2
+
+            // Write y to comm1:
+            document.getElementById("comm1").innerHTML = y;
+        <=/script>
+
+        <h3>2nd Multi-Line Comments start with /* */</h3>
+
+        <=h2 id="comm2"></=h2>
+        <=p id="comm3"></=p>
+
+        <=script>
+            /*
+            The code belew with change the heading with id="comm2" and the paragraph with id="comm3"
+            */
+           document.getElementById("comm2").innerHTML = "JavaScript Multi-line Comments with /**/";
+           document.getElementById("comm3").innerHTML = "My First Paragraph.";
+        <=/script>
+
+        <h3>3rd Using Comments to Prevent Execution</h3>
+
+        <=h2 id="comm4"></=h2>
+        <=p id="comm5"></=p>
+
+        <=p>Others</=p>
+
+        <=h2 id="comm6"></=h2>
+        <=p id="comm7"></=p>
+
+        <=script>
+            /*
+            *! Code Comments
+            */
+            //document.getElementById("comm4").innerHTML = "My First Page";
+            document.getElementById("comm5").innerHTML = "My First Paragraph";
+
+           /* document.getElementById("comm6").innerHTML = "Welcome to my HomePage";
+            document.getElementById("comm7").innerHTML = "This is my first paragraph";
+            */
+           document.getElementById("comm7").innerHTML = "The comment-block is not executed";
+
+        <=/script>
+
+        <p>The line starting with // is not executed.</p>
+            </code>
+        
+        </pre>
+
+
+    </body>
+</html>
