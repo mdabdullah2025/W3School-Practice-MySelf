@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>comparisons operator</title>
+  </head>
+  <body>
+    <h2>4 Jan 2026 9:31:10 PM</h2>
+    <h3>1st Comparison Operators</h3>
+    <h3>The == (equal) Operator</h3>
+    <p>Assign 5e to equ, and display the value of the comparison (equ == 8):</p>
+    <p id="coma"></p>
+    <p id="coma1"></p>
+    <p id="coma2"></p>
+    <h3>The === (strict equal) Operator</h3>
+    <p>Assign 5 to equ, and display the value of the comparison (equ === 5):</p>
+    <p id="coma3"></p>
+    <p>
+      Assign 5 to equ, and display the value of the comparison (equ === "5"):
+    </p>
+    <p id="coma4"></p>
+    <h3>The != (not equal) Operator</h3>
+    <p>Assign 5 to equ, and display the value of the comparison (equ != 8):</p>
+    <p id="coma5"></p>
+    <h3>The !== (strict unequal) Operator</h3>
+    <p>Assign 5 to equ, and display the value of the comparison (equ !== 5):</p>
+    <p id="coma6"></p>
+    <p>
+      Assign 5 to equ, and display the value of the comparison (equ !== "5"):
+    </p>
+    <p id="coma7"></p>
+    <p>Assign 5 to equ, and display the value of the comparison (equ !== 8):</p>
+    <p id="coma8"></p>
+    <h3>The &gt; , &'gt (greater than) Operator</h3>
+    <p>Assing 5 to equ, and display the value of the comparison (equ > 8):</p>
+    <p id="coma9"></p>
+    <h3>The &'lt, &lt; (less than) Operator</h3>
+    <p>Assign 5 to equ, and display the value of the comparison (equ < 8):</p>
+    <p id="coma10"></p>
+    <h3>The &gt;=, &'gt= (greater or equal) Operator</h3>
+    <p>Assign to equ, and display the value of the comparison (equ >= 8):</p>
+    <p id="coma11"></p>
+    <h2>The &'lt=, &lt;= (less or equal) Operator</h2>
+    <p>Assign 5 to equ, and display the value of the comparison (equ <= 8):</p>
+    <p id="coma12"></p>
+    <script>
+      let equ = 5;
+      document.getElementById("coma").innerHTML = equ == 8;
+      document.getElementById("coma1").innerHTML = equ == 5;
+      document.getElementById("coma2").innerHTML = equ == "5";
+      document.getElementById("coma3").innerHTML = equ === 5;
+      document.getElementById("coma4").innerHTML = equ === "5";
+      document.getElementById("coma5").innerHTML = equ != 8;
+      document.getElementById("coma6").innerHTML = equ !== 5;
+      document.getElementById("coma7").innerHTML = equ !== "5";
+      document.getElementById("coma8").innerHTML = equ !== 8;
+      document.getElementById("coma9").innerHTML = equ > 8;
+      document.getElementById("coma10").innerHTML = equ < 8;
+      document.getElementById("coma11").innerHTML = equ >= 8;
+      document.getElementById("coam12").innerHTML = equ <= 8;
+    </script>
+
+    <h3>2nd JavaScript String Comparison</h3>
+    <p>All conditional operators can be uesed on both numbers and strings.</p>
+    <p id="stri"></p>
+    <p>NOTE: that strings are compared alphabetically:</p>
+    <p id="stri1"></p>
+    <p id="stri2"></p>
+    <p id="stri3"></p>
+    <p id="stri4"></p>
+
+    <script>
+      let text1 = "A";
+      let text2 = "B";
+      let result = text1 < text2;
+      document.getElementById("stri").innerHTML = "Is A less than B? " + result;
+
+      let text3 = "20";
+      let text4 = "5";
+      let result1 = text3 < text4;
+      document.getElementById("stri1").innerHTML =
+        "Is 20 less than 5? " + result1;
+    </script>
+
+    <h3>3rd Comparing Different Types</h3>
+    <h3>The <= (greater than or Equal)</h3>
+    <p>2 < 12</p>
+    <p id="diff"></p>
+    <p>2 < "12"</p>
+    <p id="diff1"></p>
+    <p>2 < "John</p>
+    <p id="diff2"></p>
+    <p>2 > "John"</p>
+    <p id="diff3"></p>
+    <p>2 == "John"</p>
+    <p id="diff4"></p>
+    <p>"2" < "12"</p>
+    <p id="diff5"></p>
+    <p>"2" > "12"</p>
+    <p id="diff6"></p>
+    <p>"2" == "12"</p>
+    <p id="diff7"></p>
+
+    <script>
+      document.getElementById("diff").innerHTML = 2 < 12;
+      document.getElementById("diff1").innerHTML = 2 < "12";
+      document.getElementById("diff2").innerHTML = 2 < "John";
+      document.getElementById("diff3").innerHTML = 2 > "John";
+      document.getElementById("diff4").innerHTML = 2 == "John";
+      document.getElementById("diff5").innerHTML = "2" < "12";
+      document.getElementById("diff6").innerHTML = "2" > "12";
+      document.getElementById("diff7").innerHTML = "2" == "12";
+    </script>
+
+    <h3>
+      To Secure a proper result, variables shoulds be converted to the proper
+      typo before comparison:
+    </h3>
+    <p>Input your age and click the button:</p>
+    <input id="age" value="18" />
+    <button onclick="myFunction()">Try id😊</button>
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let voteable;
+        let age = Number(document.getElementById("age").value);
+        if (isNaN(age)) {
+          voteable = "Input is not a number";
+        } else {
+          voteable = age < 18 ? "Too yough" : "Old enough";
+        }
+        document.getElementById("demo").innerHTML = voteable + " to vote";
+      }
+    </script>
+  </body>
+</html>
